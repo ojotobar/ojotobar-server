@@ -1,0 +1,6 @@
+2023-05-28	20:12:05	6d21f735-bb62-4db2-a3a4-300c6da0b4c0	POST	undefined	/login
+2023-05-28	20:13:37	baddade3-41e4-4ba1-990e-ee5f67bf2efa	GET	undefined	/roles
+2023-05-28	20:31:06	1c4fd625-ed7c-4991-8bb6-20938d410257	POST	undefined	/register
+2023-05-28	20:31:58	bbe6bbc0-2c02-49b8-9bcc-3a8969e3a137	POST	undefined	/register
+2023-05-28	20:32:44	b4f16e3a-533f-427f-aa60-f337f330961f	POST	undefined	/register
+2023-05-28	20:33:36	38ab19f7-afc1-47ad-9ef0-4b5c8adb4442	POST	undefined	/register

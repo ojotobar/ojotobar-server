@@ -1,0 +1,24 @@
+2023-05-28	19:01:17	8a3dc8a7-a075-41e2-943b-c41645d648a6	Server running on 3500.	Windows_NT - Windows 10 Enterprise
+2023-05-28	19:05:37	89459372-82dc-41b5-b5e5-5758bafc6998	Server running on 3500.	Windows_NT - Windows 10 Enterprise
+2023-05-28	19:05:50	55ba2727-5a18-43bc-8e9d-7cdbf092d3b0	Server running on 3500.	Windows_NT - Windows 10 Enterprise
+2023-05-28	19:06:17	cafa284e-c677-48ff-a7c9-230128b5ff51	Server running on 3500.	Windows_NT - Windows 10 Enterprise
+2023-05-28	19:06:29	7d6df51c-5e40-4937-8cdc-5fea98c20f23	Server running on 3500.	Windows_NT - Windows 10 Enterprise
+2023-05-28	19:09:23	791b93f2-bc67-490c-b14d-7aa74fdfaa67	Server running on 3500.	Windows_NT - Windows 10 Enterprise
+2023-05-28	19:09:47	427ab80f-7e51-4799-a5ee-83b3cc2fbb95	Server running on 3500.	Windows_NT - Windows 10 Enterprise
+2023-05-28	19:09:57	0fb221eb-28a6-4b06-9b24-4ef1bbd59d08	Server running on 3500.	Windows_NT - Windows 10 Enterprise
+2023-05-28	19:10:51	a5a4f7ca-0952-4e26-8df7-d13968bc5d37	Server running on 3500.	Windows_NT - Windows 10 Enterprise
+2023-05-28	19:15:08	6b833d99-434e-41e7-b8bb-95361b77bad1	Server running on 3500.	Windows_NT - Windows 10 Enterprise
+2023-05-28	19:18:33	5311d589-5b51-46f6-9250-a13bb32a9d8c	Server running on 3500.	Windows_NT - Windows 10 Enterprise
+2023-05-28	19:18:50	070a163e-d2c7-4d8c-be31-dc6e47741867	Server running on 3500.	Windows_NT - Windows 10 Enterprise
+2023-05-28	19:20:54	d456aef5-14d3-4948-bad4-4837dbf6dae8	Server running on 3500.	Windows_NT - Windows 10 Enterprise
+2023-05-28	19:22:16	627b13a5-42ef-4a5c-91ac-9c2039d0693a	Server running on 3500.	Windows_NT - Windows 10 Enterprise
+2023-05-28	19:23:12	e5fbb3e0-ad09-4463-ac2a-90222ea12b95	Server running on 3500.	Windows_NT - Windows 10 Enterprise
+2023-05-28	19:23:29	c0555eac-f674-41ff-a650-53bed1374570	Server running on 3500.	Windows_NT - Windows 10 Enterprise
+2023-05-28	19:24:21	fbc24aa8-86c9-4495-881d-84bce7f65210	Server running on 3500.	Windows_NT - Windows 10 Enterprise
+2023-05-28	19:24:40	eeaa1fc0-0af5-467e-8a23-954a31bb18fa	Server running on 3500.	Windows_NT - Windows 10 Enterprise
+2023-05-28	19:25:11	20784214-177f-4c19-abc2-b73beffe1c5b	OK: Verification email sent to ojotobar@gmail.com
+2023-05-28	19:27:37	c34aa0f3-fee2-480a-9c7c-cbe534370baa	Server running on 3500.	Windows_NT - Windows 10 Enterprise
+2023-05-28	19:27:55	e07cad3e-cff4-48d9-8b92-744baf381291	Server running on 3500.	Windows_NT - Windows 10 Enterprise
+2023-05-28	19:28:16	358cbaf2-99f3-4f5e-a092-1534ebea1fb5	Server running on 3500.	Windows_NT - Windows 10 Enterprise
+2023-05-28	19:30:52	6c8686e3-9ffa-416a-9f5b-bc3a9d4b5c14	Server running on 3500.	Windows_NT - Windows 10 Enterprise
+2023-05-28	19:31:13	8e172fc4-a645-4b24-a619-9ed2f429eab1	Server running on 3500.	Windows_NT - Windows 10 Enterprise

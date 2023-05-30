@@ -1,0 +1,14 @@
+2023-05-28	23:24:37	e51e4beb-cdd6-4382-8fda-8e3105682a8b	GET	undefined	/education
+2023-05-28	23:26:53	33039b52-80a6-4302-a1a2-bbdafc8eec5f	POST	undefined	/login
+2023-05-28	23:32:44	e56b2669-762b-4f90-a32c-f5273dbc2c35	POST	undefined	/login
+2023-05-28	23:34:42	b657ad20-03c9-49d3-a09c-15405032a63f	POST	undefined	/login
+2023-05-28	23:36:44	2d671761-d413-4efc-998f-20edbb93bc80	POST	undefined	/login
+2023-05-28	23:38:09	b22cf7c3-3de8-4593-a678-a3ef5c6a8c47	POST	undefined	/login
+2023-05-28	23:49:30	ecd80ccc-4bba-4949-81d0-9c023c7355e9	POST	undefined	/education
+2023-05-28	23:53:53	b4f92377-611e-4971-bebe-ef46014b33bf	GET	undefined	/education
+2023-05-28	23:55:25	2ad9335b-5c0a-4ce4-b0f7-78ccad69575c	GET	undefined	/education
+2023-05-28	23:55:36	6f15a344-1e64-4f54-9fee-c96ba3515bcf	POST	undefined	/login
+2023-05-28	23:56:03	e6dd4f55-9b29-4b85-a71b-c346f638d9a0	GET	undefined	/education
+2023-05-28	23:59:06	d920eba7-c308-4f10-b503-7f1ca0c2d1eb	GET	undefined	/education
+2023-05-28	23:59:39	68387c6b-36c7-4afa-b9fe-f1e3a5525c20	GET	undefined	/education
+2023-05-28	23:59:48	b8b23acd-289a-4fd5-820c-07370f93f4e9	GET	undefined	/education
