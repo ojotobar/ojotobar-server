@@ -17,6 +17,9 @@ const upload = multer({ storage, fileFilter });
 
 router.route('/')
     .get(userController.getSingleUser);
+
+router.route('/:userId')
+    .post(userController.notify);
     
 router.route('/upload-photo/:userId')
     .post(verifyJWT, upload.single('image'), fileController.uploadUserPhoto);

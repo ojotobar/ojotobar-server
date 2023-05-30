@@ -48,6 +48,9 @@ app.use('/project', require('./routes/api/project'));
 app.use('/skill', require('./routes/api/skill'));
 app.use('/social-link', require('./routes/api/socialLink'));
 app.use('/user', require('./routes/api/user'));
+app.use('/reset-password', require('./routes/api/resetPassword'));
+app.use('/change-password', require('./routes/api/changePassword'));
+app.use('/notification', require('./routes/api/notification'));
 
 
 app.use(errorHandler);
