@@ -68,7 +68,7 @@ const handleLogin = async (req, res) => {
         foundUser.refreshToken = refreshToken;
         foundUser.save();
         //set the refresh token in cookie
-        res.cookie('jwt', refreshToken, { httpOnly: true, sameSite: 'None', maxAge: 24 * 60 * 60 * 1000 });//secure: true might not work for Thunder Client
+        res.cookie('jwt', refreshToken, { httpOnly: true, sameSite: 'None', secure: true, maxAge: 24 * 60 * 60 * 1000 });//secure: true might not work for Thunder Client
         res.status(200).json({ accessToken });
     } else {
         res.status(401).json({'message':'Password is not correct.'});
