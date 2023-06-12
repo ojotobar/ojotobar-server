@@ -3,6 +3,7 @@ const verifySocialMediaName = (...allowedSocialName) => {
         const { name, url } = req.body;
         if(!name || !url) return res.status(400).json({'message':'All the fields are required.'});
         const smArray = [...allowedSocialName];
+        console.log(smArray, name)
         if(!smArray.includes(name)) return res.status(400).json({'message':'Social Media name not allowed'});
         next();
     }

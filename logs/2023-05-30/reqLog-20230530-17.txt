@@ -1,9 +1,0 @@
-2023-05-30	17:09:19	b820c719-dfec-442d-803a-3816e5039958	PATCH	undefined	/reset-password
-2023-05-30	17:10:29	2bc94272-5316-4035-94e4-b2165595a3b2	PATCH	undefined	/reset-password
-2023-05-30	17:10:36	b4c78f46-4a34-47a6-9ab9-629d75462aff	PATCH	undefined	/reset-password
-2023-05-30	17:11:46	856f27c3-7ac4-46ed-9169-67f8484352ba	PATCH	undefined	/reset-password
-2023-05-30	17:12:41	c9e9bcf2-882b-493f-9d32-97dc5d6364c5	PATCH	undefined	/reset-password
-2023-05-30	17:14:12	bf835d26-d4f3-4fd4-a152-72605fc29837	PATCH	undefined	/reset-password
-2023-05-30	17:14:22	df91ffd9-310b-41e6-aa9c-ed84fc0ec039	PATCH	undefined	/reset-password
-2023-05-30	17:25:03	c1f6fa91-cfb5-4eef-9554-f8ea15a45ad7	PATCH	undefined	/reset-password
-2023-05-30	17:28:50	e45ee212-7aa7-49f9-a623-3c85f48a34b2	PATCH	undefined	/reset-password

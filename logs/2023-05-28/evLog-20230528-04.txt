@@ -1,3 +1,0 @@
-2023-05-28	04:55:04	38922251-ccc4-43a5-9200-3766a7f9a2d9	OK: Verification email sent to ojotobar@gmail.com
-2023-05-28	04:57:01	84ee0968-be6c-450a-a898-aead938097ad	Server running on 3500.	Windows_NT - Windows 10 Enterprise
-2023-05-28	04:57:12	d28b3e21-8162-4a94-a217-dcc04284fdb5	OK: Verification email sent to ojotobar@gmail.com

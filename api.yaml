@@ -1,0 +1,48 @@
+swagger: "2.0"
+info:
+  title: Portfolio Api
+  description: My Professional Portfolio API
+  version: 1.0
+  contact:
+    email: ojotobar@gmail.com
+  license:
+    name: Apache 2.0
+    url: http://apache.org/
+  servers:
+    -url: http://localhost:3500/
+    description: Local Server
+    -url: http://ojotobar.com
+    description: Remote Server
+
+schemes: [http,https]
+
+paths:
+  /user:
+    get:
+      tags: [User]
+      summary: Gets the user details
+      description: This endpoint gets the user's details
+      #content: [application/json]
+      responses:
+        200:
+          description: OK
+          content: [application/json]
+          schema:
+            type: object
+            properties:
+              id:
+                type: string
+              firstName:
+                type: string
+              lastName:
+                type: string
+              middleName:
+                type: string
+              emailAddress:
+                type: string
+              phoneNumber:
+                type: string
+              dateOfBirth:
+                type: string
+              photoUrl:
+                type: string

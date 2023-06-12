@@ -1,5 +1,6 @@
 const Skill = require('../models/Skill');
 const User = require('../models/User');
+const cloudinary = require('../utils/cloudinary');
 
 const create = async (req, res) => {
     const refreshToken = req.cookies?.jwt;
@@ -72,6 +73,7 @@ const update = async (req, res) => {
 
         skillToUpdate.skill = skill;
         skillToUpdate.level = level;
+        
         await skillToUpdate.save();
         res.status(200).json({'message':'Skill record successfully updated.'});
     } catch (error) {
@@ -82,8 +84,16 @@ const update = async (req, res) => {
 const remove = async (req, res) => {
     const id = req.params.id;
     try {
-        await Skill.findByIdAndDelete({ _id: id });
-        res.status(200).json({'message':'Skill record successfully deleted.'});
+        const skill = await Skill.findOne({ _id: id });
+        if(skill){
+            if(skill?.publicId){
+                await cloudinary.uploader.destroy(skill.publicId);
+            }
+            await Skill.deleteOne({ _id: skill._id });
+            res.status(200).json({'message':'Skill record successfully deleted.'});
+        } else {
+            res.status(404).json({'message': `No skill found with Id: ${id}`});
+        }
     } catch (error) {
         res.status(500).json({'message':error.message});
     }

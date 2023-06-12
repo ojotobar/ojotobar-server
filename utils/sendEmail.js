@@ -14,7 +14,7 @@ const sendEmail = ({ recipientEmail, recipientName, subject, html }) => {
 				{
 					From: 
                     {
-                        Email: "ojotobar@gmail.com",
+                        Email: "ojotobar@outlook.com",
                         Name: "Professional Portfolio"
 					},
 					To: 

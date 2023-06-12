@@ -18,7 +18,7 @@ router.route('/single/:id')
     .get(socialLinkController.getById)
 
 router.route('/:id')
-    .put(verifyJWT, verifyRoles(ROLES.Admin), verifySocialMediaName(SM_NAMES.Github, SM_NAMES.LinkedIn, SM_NAMES.Website, SM_NAMES.WhatsApp), socialLinkController.update)
+    .put(verifyJWT, verifyRoles(ROLES.Admin), verifySocialMediaName(SM_NAMES.Github, SM_NAMES.LinkedIn, SM_NAMES.Website, SM_NAMES.WhatsApp, SM_NAMES.Facebook), socialLinkController.update)
     .delete(verifyJWT, verifyRoles(ROLES.Admin), socialLinkController.remove);
 
 module.exports = router;

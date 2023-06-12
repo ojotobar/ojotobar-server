@@ -10,7 +10,7 @@ router.route('/')
     .post(verifyJWT, verifyRoles(ROLES.Admin), educationController.create);
 
 router.route('/:userId')
-    .get(verifyJWT, educationController.getByUserId);
+    .get(educationController.getByUserId);
 
 router.route('/single/:id')
     .get(educationController.getById);

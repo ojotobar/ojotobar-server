@@ -1,5 +1,0 @@
-2023-05-29	17:45:53	c36e153c-e1a1-466e-ae2b-1bde5906345f	Server running on 3500.	Windows_NT - Windows 10 Enterprise
-2023-05-29	17:52:30	62cb9ea3-0f87-4368-9811-63bec1c5108b	Server running on 3500.	Windows_NT - Windows 10 Enterprise
-2023-05-29	17:55:51	450a5a32-02a7-46cc-abfe-b806923957f8	Server running on 3500.	Windows_NT - Windows 10 Enterprise
-2023-05-29	17:56:25	2c6e9ab1-934d-4ee1-b495-55500ea1e5b4	Server running on 3500.	Windows_NT - Windows 10 Enterprise
-2023-05-29	17:58:16	2b83dfc1-3153-491b-a947-d48251e16928	Server running on 3500.	Windows_NT - Windows 10 Enterprise

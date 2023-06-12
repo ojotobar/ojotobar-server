@@ -1,2 +1,0 @@
-2023-05-29	04:53:16	44ace702-0a3f-44cf-99c2-4b0139a44e4f	ReferenceError: consolelog is not defined
-2023-05-29	04:56:50	6c7ad29d-4fa1-4367-870b-6b673c68509f	ReferenceError: typeOf is not defined

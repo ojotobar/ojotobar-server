@@ -6,7 +6,9 @@ const projectSchema = new Schema({
     name: { type: String, required: true },
     description: { type: String, required: true },
     techStacks: { type: String, required: true },
-    url: String
+    url: String,
+    pageUrl: { type: String, default: '' },
+    pageUrlPublicId: { type: String, default: '' }
 });
 
 module.exports = mongoose.model('Project', projectSchema);
