@@ -105,7 +105,7 @@ const getSingleUser = async (req, res) => {
 const getPersonalInfo = async (req, res) => {
     try {
         const user = await User.findOne({ _id: req.params.id });
-        const address = await Address.findOne({ _id: req.params.id });
+        const address = await Address.findOne({ userId: req.params.id });
 
         res.status(200).json({
             "firstName": user?.firstName,
