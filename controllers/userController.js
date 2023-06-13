@@ -129,6 +129,7 @@ const notify = async (req, res) => {
         email,
         message
     } = req.body;
+    if(!name || !email || !message) return res.status(400).json({'message':'All the fields are required.'})
 
     try {
         const user = await User.findOne({ _id: userId });
