@@ -1,6 +1,6 @@
 const swaggerUI = require('swagger-ui-express');
-//const YAML = require('yamljs');
-const swaggerJsDoc = require('swagger-jsdoc');
+const fs = require('fs-extra');
+const swaggerJsDoc = fs.readJsonSync('./api.json');
 require('dotenv').config();
 const express = require('express');
 const { format } = require('date-fns');
@@ -14,53 +14,14 @@ const connectDB = require('./config/dbConn');
 const errorHandler = require('./middleware/errorHandler');
 const cookieParser = require('cookie-parser');
 const PORT = process.env.PORT || 3500;
-//Middleware for swagger documentation
-//app.use('/', swaggerUI.serve, swaggerUI.setup(swaggerJsDoc));
-const options = {
-    definition: {
-        openapi: "3.0.0",
-        info: {
-            title: "Portfolio API",
-            version: "1.0.0",
-            description: "Professional Portfolio API",
-            contact: {
-                email: "ojotobar@gmail.com",
-                website: "https://ojotobar.com"
-            },
-            license: {
-                name: "Apache",
-                url: "http://apache.com"
-            }
-        },
-        servers: [
-            {
-                url: "http://localhost:3500"
-            },
-            {
-                url: "https://www.ojotobar.api.com"
-            }
-        ],
-        components: {
-            securitySchemes: {
-                bearerAuth: {
-                    type: "http",
-                    scheme: "bearer",
-                    bearerFormat: "JWT"
-                }
-            },
-        },
-        security: {
-            bearerAuth: []
-        }
-    },
-    apis: ["./routes/api/*.js"]
-}
 
-const specs = swaggerJsDoc(options);
 const app = express();
 
 //swagger
-app.use("/api-docs", swaggerUI.serve, swaggerUI.setup(specs));
+//app.use("/api-docs", swaggerUI.serve, swaggerUI.setup(specs));
+//Middleware for swagger documentation
+app.use('/api-docs', swaggerUI.serve, swaggerUI.setup(swaggerJsDoc));
+
 
 //Connect to MongoDb
 connectDB();

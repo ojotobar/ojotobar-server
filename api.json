@@ -1,0 +1,3023 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+      "title": "Ojo Toba Rufus PortfolioAPI",
+      "description": "Ojo Toba Rufus Portfolio API Documentation",
+      "contact": {
+        "email": "ojotobar@gmail.com"
+      },
+      "license": {
+        "name": "Apache 2.0",
+        "url": "https:apache.org"
+      },
+      "version": "1.0"
+    },
+    "servers": [
+      {
+        "url": "https://exuberant-lamb-long-underwear.cyclic.app",
+        "variables": {}
+      },
+      {
+        "url": "http://localhost:3500",
+        "variables": {}
+      }
+    ],
+    "paths": {
+      "/login": {
+        "post": {
+          "tags": [
+            "Auth"
+          ],
+          "summary": "Login",
+          "operationId": "Login",
+          "parameters": [],
+          "requestBody": {
+            "description": "",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "allOf": [
+                    {
+                      "$ref": "#/components/schemas/LoginRequest"
+                    },
+                    {
+                      "example": {
+                        "emailAddress": "example@email.com",
+                        "password": "String@1"
+                      }
+                    }
+                  ]
+                },
+                "example": {
+                  "emailAddress": "example@email.com",
+                  "password": "String@1"
+                }
+              }
+            },
+            "required": true
+          },
+          "responses": {
+            "200": {
+              "description": "OK",
+              "headers": {}
+            }
+          },
+          "deprecated": false
+        }
+      },
+      "/register": {
+        "post": {
+          "tags": [
+            "Auth"
+          ],
+          "summary": "Register",
+          "operationId": "Register",
+          "parameters": [],
+          "requestBody": {
+            "description": "",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "allOf": [
+                    {
+                      "$ref": "#/components/schemas/RegisterRequest"
+                    },
+                    {
+                      "example": {
+                        "firstName": "string",
+                        "lastName": "string",
+                        "middleName": "string",
+                        "emailAddress": "example@email.com",
+                        "phoneNumber": "+12345678",
+                        "dateOfBirth": "2001/01/01",
+                        "password": "String@1",
+                        "confirmPassword": "String@1"
+                      }
+                    }
+                  ]
+                },
+                "example": {
+                    "firstName": "string",
+                    "lastName": "string",
+                    "middleName": "string",
+                    "emailAddress": "example@email.com",
+                    "phoneNumber": "+12345678",
+                    "dateOfBirth": "2001/01/01",
+                    "password": "String@1",
+                    "confirmPassword": "String@1"
+                }
+              }
+            },
+            "required": true
+          },
+          "responses": {
+            "200": {
+              "description": "",
+              "headers": {}
+            }
+          },
+          "deprecated": false
+        }
+      },
+      "/refresh": {
+        "get": {
+          "tags": [
+            "Auth"
+          ],
+          "summary": "RefreshToken",
+          "operationId": "RefreshToken",
+          "parameters": [],
+          "responses": {
+            "200": {
+              "description": "",
+              "headers": {}
+            }
+          },
+          "deprecated": false,
+          "security": [
+            {
+              "bearer": []
+            }
+          ]
+        }
+      },
+      "/logout": {
+        "get": {
+          "tags": [
+            "Auth"
+          ],
+          "summary": "LogOut",
+          "operationId": "LogOut",
+          "parameters": [],
+          "responses": {
+            "200": {
+              "description": "",
+              "headers": {}
+            }
+          },
+          "deprecated": false
+        }
+      },
+      "/roles": {
+        "post": {
+          "tags": [
+            "Role"
+          ],
+          "summary": "AddNewRole",
+          "operationId": "AddNewRole",
+          "parameters": [],
+          "requestBody": {
+            "description": "",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "allOf": [
+                    {
+                      "$ref": "#/components/schemas/AddNewRoleRequest"
+                    },
+                    {
+                      "example": {
+                        "name": "User",
+                        "role": 1
+                      }
+                    }
+                  ]
+                },
+                "example": {
+                  "name": "User",
+                  "role": 1
+                }
+              }
+            },
+            "required": true
+          },
+          "responses": {
+            "200": {
+              "description": "",
+              "headers": {}
+            }
+          },
+          "deprecated": false,
+          "security": [
+            {
+              "bearer": []
+            }
+          ]
+        },
+        "get": {
+          "tags": [
+            "Role"
+          ],
+          "summary": "GetAllRoles",
+          "operationId": "GetAllRoles",
+          "parameters": [],
+          "responses": {
+            "200": {
+              "description": "",
+              "headers": {}
+            }
+          },
+          "deprecated": false,
+          "security": [
+            {
+              "bearer": []
+            }
+          ]
+        }
+      },
+      "/roles/{id}": {
+        "get": {
+          "tags": [
+            "Role"
+          ],
+          "summary": "Get A Role By Id",
+          "operationId": "GetRoleById",
+          "parameters": [
+            {
+                "name": "id",
+                "in": "path",
+                "required": true,
+                "type": "string"
+            }
+          ],
+          "responses": {
+            "200": {
+              "description": "",
+              "headers": {}
+            }
+          },
+          "deprecated": false,
+          "security": [
+            {
+              "bearer": []
+            }
+          ]
+        },
+        "put": {
+          "tags": [
+            "Role"
+          ],
+          "summary": "UpdateRoles",
+          "operationId": "UpdateRoles",
+          "parameters": [
+            {
+                "name": "id",
+                "in": "path",
+                "required": true,
+                "type": "string"
+            }
+          ],
+          "requestBody": {
+            "description": "",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "allOf": [
+                    {
+                      "$ref": "#/components/schemas/UpdateRolesRequest"
+                    },
+                    {
+                      "example": {
+                        "name": "User",
+                        "role": 1
+                      }
+                    }
+                  ]
+                },
+                "example": {
+                  "name": "User",
+                  "role": 1
+                }
+              }
+            },
+            "required": true
+          },
+          "responses": {
+            "200": {
+              "description": "",
+              "headers": {}
+            }
+          },
+          "deprecated": false,
+          "security": [
+            {
+              "bearer": []
+            }
+          ]
+        },
+        "delete": {
+          "tags": [
+            "Role"
+          ],
+          "summary": "DeleteRoles",
+          "operationId": "DeleteRoles",
+          "parameters": [
+            {
+                "name": "id",
+                "in": "path",
+                "required": true,
+                "type": "string"
+            }
+          ],
+          "responses": {
+            "200": {
+              "description": "",
+              "headers": {}
+            }
+          },
+          "deprecated": false,
+          "security": [
+            {
+              "bearer": []
+            }
+          ]
+        }
+      },
+      "/verify-email": {
+        "patch": {
+          "tags": [
+            "Auth"
+          ],
+          "summary": "VerifyEmail",
+          "operationId": "VerifyEmail",
+          "parameters": [],
+          "requestBody": {
+            "description": "",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "allOf": [
+                    {
+                      "$ref": "#/components/schemas/VerifyEmailRequest"
+                    },
+                    {
+                      "example": {
+                        "token": "string"
+                      }
+                    }
+                  ]
+                },
+                "example": {
+                  "token": "string"
+                }
+              }
+            },
+            "required": true
+          },
+          "responses": {
+            "200": {
+              "description": "",
+              "headers": {}
+            }
+          },
+          "deprecated": false
+        }
+      },
+      "/education": {
+        "get": {
+          "tags": [
+            "Education"
+          ],
+          "summary": "Get All Education",
+          "operationId": "GetAllEducation",
+          "parameters": [],
+          "responses": {
+            "200": {
+              "description": "",
+              "headers": {}
+            }
+          },
+          "deprecated": false
+        },
+        "post": {
+          "tags": [
+            "Education"
+          ],
+          "summary": "AddEducation",
+          "operationId": "AddEducation",
+          "parameters": [],
+          "requestBody": {
+            "description": "",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "allOf": [
+                    {
+                      "$ref": "#/components/schemas/AddEducationRequest"
+                    },
+                    {
+                      "example": {
+                        "institution": "University of Nigeria",
+                        "qualificationObtained": "Bachelor of Science in Computer Science",
+                        "startDate": "2001-01-01",
+                        "endDate": "2003-07-31"
+                      }
+                    }
+                  ]
+                },
+                "example": {
+                    "institution": "University of Nigeria",
+                    "qualificationObtained": "Bachelor of Science in Computer Science",
+                    "startDate": "2001-01-01",
+                    "endDate": "2003-07-31"
+                }
+              }
+            },
+            "required": true
+          },
+          "responses": {
+            "200": {
+              "description": "",
+              "headers": {}
+            }
+          },
+          "deprecated": false,
+          "security": [
+            {
+              "bearer": []
+            }
+          ]
+        }
+      },
+      "/education/{userId}": {
+        "get": {
+          "tags": [
+            "Education"
+          ],
+          "summary": "Get Education Object By UserId",
+          "operationId": "GetEducationByUserId",
+          "parameters": [
+            {
+                "name": "userId",
+                "in": "path",
+                "required": true,
+                "type": "string"
+            }
+          ],
+          "responses": {
+            "200": {
+              "description": "",
+              "headers": {}
+            }
+          },
+          "deprecated": false,
+          "security": [
+            {
+              "bearer": []
+            }
+          ]
+        }
+      },
+      "/education/{id}": {
+        "delete": {
+          "tags": [
+            "Education"
+          ],
+          "summary": "Deletes Education Record",
+          "operationId": "DeleteEducation",
+          "parameters": [
+            {
+                "name": "id",
+                "in": "path",
+                "required": true,
+                "type": "string"
+            }
+          ],
+          "responses": {
+            "200": {
+              "description": "",
+              "headers": {}
+            }
+          },
+          "deprecated": false,
+          "security": [
+            {
+              "bearer": []
+            }
+          ]
+        },
+        "put": {
+          "tags": [
+            "Education"
+          ],
+          "summary": "Updates Education Record",
+          "operationId": "UpdateEducation",
+          "parameters": [
+            {
+                "name": "id",
+                "in": "path",
+                "required": true,
+                "type": "string"
+            }
+          ],
+          "requestBody": {
+            "description": "",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "allOf": [
+                    {
+                      "$ref": "#/components/schemas/UpdateEducationRequest"
+                    },
+                    {
+                      "example": {
+                        "institution": "University of Nigeria",
+                        "qualificationObtained": "Bachelor of Science in Computer Science",
+                        "startDate": "2001-01-01",
+                        "endDate": "2003-07-31"
+                      }
+                    }
+                  ]
+                },
+                "example": {
+                    "institution": "University of Nigeria",
+                    "qualificationObtained": "Bachelor of Science in Computer Science",
+                    "startDate": "2001-01-01",
+                    "endDate": "2003-07-31"
+                }
+              }
+            },
+            "required": true
+          },
+          "responses": {
+            "200": {
+              "description": "",
+              "headers": {}
+            }
+          },
+          "deprecated": false,
+          "security": [
+            {
+              "bearer": []
+            }
+          ]
+        }
+      },
+      "/social-link": {
+        "post": {
+          "tags": [
+            "SocialLink"
+          ],
+          "summary": "AddSocialLink",
+          "operationId": "AddSocialLink",
+          "parameters": [],
+          "requestBody": {
+            "description": "",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "allOf": [
+                    {
+                      "$ref": "#/components/schemas/AddSocialLinkRequest"
+                    },
+                    {
+                      "example": {
+                        "name": "Website",
+                        "url": "https://www.website.com"
+                      }
+                    }
+                  ]
+                },
+                "example": {
+                    "name": "Website",
+                    "url": "https://www.website.com"
+                }
+              }
+            },
+            "required": true
+          },
+          "responses": {
+            "200": {
+              "description": "",
+              "headers": {}
+            }
+          },
+          "deprecated": false,
+          "security": [
+            {
+              "bearer": []
+            }
+          ]
+        },
+        "get": {
+          "tags": [
+            "SocialLink"
+          ],
+          "summary": "Get All Social Links",
+          "operationId": "GetAllSocialLinks",
+          "parameters": [],
+          "responses": {
+            "200": {
+              "description": "",
+              "headers": {}
+            }
+          },
+          "deprecated": false
+        }
+      },
+      "/social-link/{userId}": {
+        "get": {
+          "tags": [
+            "SocialLink"
+          ],
+          "summary": "GetSocialLinkByUserId",
+          "operationId": "GetSocialLinkByUserId",
+          "parameters": [
+            {
+                "name": "userId",
+                "in": "path",
+                "required": true,
+                "type": "string"
+            }
+          ],
+          "responses": {
+            "200": {
+              "description": "",
+              "headers": {}
+            }
+          },
+          "deprecated": false
+        }
+      },
+      "/social-link/single/{id}": {
+        "get": {
+          "tags": [
+            "SocialLink"
+          ],
+          "summary": "Gets A Single Social Link By Id",
+          "operationId": "GetSocialLinkById",
+          "parameters": [
+            {
+                "name": "id",
+                "in": "path",
+                "required": true,
+                "type": "string"
+            }
+          ],
+          "responses": {
+            "200": {
+              "description": "",
+              "headers": {}
+            }
+          },
+          "deprecated": false
+        }
+      },
+      "/social-link/{id}": {
+        "delete": {
+          "tags": [
+            "SocialLink"
+          ],
+          "summary": "Deletes Social Link",
+          "operationId": "DeleteSocialLink",
+          "parameters": [
+            {
+                "name": "id",
+                "in": "path",
+                "required": true,
+                "type": "string"
+            }
+          ],
+          "responses": {
+            "200": {
+              "description": "",
+              "headers": {}
+            }
+          },
+          "deprecated": false,
+          "security": [
+            {
+              "bearer": []
+            }
+          ]
+        },
+        "put": {
+            "tags": [
+              "SocialLink"
+            ],
+            "summary": "Updates Social Link",
+            "operationId": "UpdateSocialLink",
+            "parameters": [
+                {
+                    "name": "id",
+                    "in": "path",
+                    "required": true,
+                    "type": "string"
+                }
+            ],
+            "requestBody": {
+              "description": "",
+              "content": {
+                "application/json": {
+                  "schema": {
+                    "allOf": [
+                      {
+                        "$ref": "#/components/schemas/UpdateSocialLinkRequest"
+                      },
+                      {
+                        "example": {
+                          "name": "Website",
+                          "url": "https://website.com"
+                        }
+                      }
+                    ]
+                  },
+                  "example": {
+                    "name": "Website",
+                    "url": "https://website.com"
+                  }
+                }
+              },
+              "required": true
+            },
+            "responses": {
+              "200": {
+                "description": "",
+                "headers": {}
+              }
+            },
+            "deprecated": false,
+            "security": [
+              {
+                "bearer": []
+              }
+            ]
+          }
+      },
+      "/address": {
+        "post": {
+          "tags": [
+            "Address"
+          ],
+          "summary": "Adds An Address",
+          "operationId": "AddAddress",
+          "parameters": [],
+          "requestBody": {
+            "description": "",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "allOf": [
+                    {
+                      "$ref": "#/components/schemas/AddAddressRequest"
+                    },
+                    {
+                      "example": {
+                        "line1": "3, Bagson Street",
+                        "line2": "Tudun Fulani New Site, Gwarinpa",
+                        "city": "Houston",
+                        "postalCode": "901101",
+                        "state": "Texas",
+                        "country": "USA"
+                      }
+                    }
+                  ]
+                },
+                "example": {
+                  "line1": "string",
+                  "line2": "string",
+                  "city": "string",
+                  "postalCode": "string",
+                  "state": "string",
+                  "country": "string"
+                }
+              }
+            },
+            "required": true
+          },
+          "responses": {
+            "200": {
+              "description": "",
+              "headers": {}
+            }
+          },
+          "deprecated": false,
+          "security": [
+            {
+              "bearer": []
+            }
+          ]
+        },
+        "get": {
+          "tags": [
+            "Address"
+          ],
+          "summary": "Gets All Addresses",
+          "operationId": "GetAllAddresses",
+          "parameters": [],
+          "responses": {
+            "200": {
+              "description": "",
+              "headers": {}
+            }
+          },
+          "deprecated": false
+        }
+      },
+      "/address/{userId}": {
+        "get": {
+          "tags": [
+            "Address"
+          ],
+          "summary": "Gets An Address By UserId",
+          "operationId": "GetAddressByUserId",
+          "parameters": [
+            {
+                "name": "userId",
+                "in": "path",
+                "required": true,
+                "type": "string"
+            }
+          ],
+          "responses": {
+            "200": {
+              "description": "",
+              "headers": {}
+            }
+          },
+          "deprecated": false
+        }
+      },
+      "/address/single/{id}": {
+        "get": {
+          "tags": [
+            "Address"
+          ],
+          "summary": "Get Address By Id",
+          "operationId": "GetAddressById",
+          "parameters": [
+            {
+                "name": "id",
+                "in": "path",
+                "required": true,
+                "type": "string"
+            }
+          ],
+          "responses": {
+            "200": {
+              "description": "",
+              "headers": {}
+            }
+          },
+          "deprecated": false
+        }
+      },
+      "/address/{id}": {
+        "put": {
+          "tags": [
+            "Address"
+          ],
+          "summary": "Updates Address",
+          "operationId": "UpdateAddress",
+          "parameters": [
+            {
+                "name": "id",
+                "in": "path",
+                "required": true,
+                "type": "string"
+            }
+          ],
+          "requestBody": {
+            "description": "",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "allOf": [
+                    {
+                      "$ref": "#/components/schemas/UpdateAddressRequest"
+                    },
+                    {
+                      "example": {
+                        "line1": "string",
+                        "line2": "string",
+                        "city": "string",
+                        "postalCode": "string",
+                        "state": "string",
+                        "country": "string"
+                      }
+                    }
+                  ]
+                },
+                "example": {
+                    "line1": "string",
+                    "line2": "string",
+                    "city": "string",
+                    "postalCode": "string",
+                    "state": "string",
+                    "country": "string"
+                }
+              }
+            },
+            "required": true
+          },
+          "responses": {
+            "200": {
+              "description": "",
+              "headers": {}
+            }
+          },
+          "deprecated": false,
+          "security": [
+            {
+              "bearer": []
+            }
+          ]
+        },
+        "delete": {
+          "tags": [
+            "Address"
+          ],
+          "summary": "Deletes An Address",
+          "operationId": "DeleteAddress",
+          "parameters": [
+            {
+                "name": "id",
+                "in": "path",
+                "required": true,
+                "type": "string"
+            }
+          ],
+          "responses": {
+            "200": {
+              "description": "",
+              "headers": {}
+            }
+          },
+          "deprecated": false,
+          "security": [
+            {
+              "bearer": []
+            }
+          ]
+        }
+      },
+      "/certification": {
+        "post": {
+          "tags": [
+            "Certification"
+          ],
+          "summary": "Adds Certification",
+          "operationId": "AddCertification",
+          "parameters": [],
+          "requestBody": {
+            "description": "",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "allOf": [
+                    {
+                      "$ref": "#/components/schemas/AddCertificationRequest"
+                    },
+                    {
+                      "example": {
+                        "name": "string",
+                        "issuingBody": "string",
+                        "issueDate": "2001-01-01",
+                        "certUrl": "string"
+                      }
+                    }
+                  ]
+                },
+                "example": {
+                    "name": "string",
+                    "issuingBody": "string",
+                    "issueDate": "2001-01-01",
+                    "certUrl": "string"
+                }
+              }
+            },
+            "required": true
+          },
+          "responses": {
+            "200": {
+              "description": "",
+              "headers": {}
+            }
+          },
+          "deprecated": false,
+          "security": [
+            {
+              "bearer": []
+            }
+          ]
+        },
+        "get": {
+          "tags": [
+            "Certification"
+          ],
+          "summary": "Get All Certifications",
+          "operationId": "GetAllCertifications",
+          "parameters": [],
+          "responses": {
+            "200": {
+              "description": "",
+              "headers": {}
+            }
+          },
+          "deprecated": false
+        }
+      },
+      "/certification/{userId}": {
+        "get": {
+          "tags": [
+            "Certification"
+          ],
+          "summary": "Get Certifications By UserId",
+          "operationId": "GetCertificationByUserId",
+          "parameters": [
+            {
+                "name": "userId",
+                "in": "path",
+                "required": true,
+                "type": "string"
+            }
+          ],
+          "responses": {
+            "200": {
+              "description": "",
+              "headers": {}
+            }
+          },
+          "deprecated": false
+        }
+      },
+      "/certification/single/{id}": {
+        "get": {
+          "tags": [
+            "Certification"
+          ],
+          "summary": "Get A Certification By Id",
+          "operationId": "GetCertificationById",
+          "parameters": [
+            {
+                "name": "id",
+                "in": "path",
+                "required": true,
+                "type": "string"
+            }
+          ],
+          "responses": {
+            "200": {
+              "description": "",
+              "headers": {}
+            }
+          },
+          "deprecated": false
+        }
+      },
+      "/certification/{id}": {
+        "put": {
+          "tags": [
+            "Certification"
+          ],
+          "summary": "Updates Certification",
+          "operationId": "UpdateCertification",
+          "parameters": [
+            {
+                "name": "id",
+                "in": "path",
+                "required": true,
+                "type": "string"
+            }
+          ],
+          "requestBody": {
+            "description": "",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "allOf": [
+                    {
+                      "$ref": "#/components/schemas/UpdateCertificationRequest"
+                    },
+                    {
+                      "example": {
+                        "name": "string",
+                        "issuingBody": "string",
+                        "issueDate": "2001-01-01",
+                        "certUrl": "string"
+                      }
+                    }
+                  ]
+                },
+                "example": {
+                    "name": "string",
+                    "issuingBody": "string",
+                    "issueDate": "2001-01-01",
+                    "certUrl": "string"
+                }
+              }
+            },
+            "required": true
+          },
+          "responses": {
+            "200": {
+              "description": "",
+              "headers": {}
+            }
+          },
+          "deprecated": false,
+          "security": [
+            {
+              "bearer": []
+            }
+          ]
+        },
+        "delete": {
+          "tags": [
+            "Certification"
+          ],
+          "summary": "Deletes Certification",
+          "operationId": "DeleteCertification",
+          "parameters": [
+            {
+                "name": "id",
+                "in": "path",
+                "required": true,
+                "type": "string"
+            }
+          ],
+          "responses": {
+            "200": {
+              "description": "",
+              "headers": {}
+            }
+          },
+          "deprecated": false,
+          "security": [
+            {
+              "bearer": []
+            }
+          ]
+        }
+      },
+      "/experience": {
+        "post": {
+          "tags": [
+            "Experience"
+          ],
+          "summary": "Adds Experience",
+          "operationId": "AddExperience",
+          "parameters": [],
+          "requestBody": {
+            "description": "",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "allOf": [
+                    {
+                      "$ref": "#/components/schemas/AddExperienceRequest"
+                    },
+                    {
+                      "example": {
+                        "company": "string",
+                        "jobTitle": "string",
+                        "description": "string",
+                        "city": "string",
+                        "country": "string",
+                        "startDate": "2001-01-01",
+                        "endDate": "2001-01-01"
+                      }
+                    }
+                  ]
+                },
+                "example": {
+                    "company": "string",
+                    "jobTitle": "string",
+                    "description": "string",
+                    "city": "string",
+                    "country": "string",
+                    "startDate": "2001-01-01",
+                    "endDate": "2001-01-01"
+                }
+              }
+            },
+            "required": true
+          },
+          "responses": {
+            "200": {
+              "description": "",
+              "headers": {}
+            }
+          },
+          "deprecated": false,
+          "security": [
+            {
+              "bearer": []
+            }
+          ]
+        },
+        "get": {
+          "tags": [
+            "Experience"
+          ],
+          "summary": "Gets All Experiences",
+          "operationId": "GetAllExperiences",
+          "parameters": [],
+          "responses": {
+            "200": {
+              "description": "",
+              "headers": {}
+            }
+          },
+          "deprecated": false
+        }
+      },
+      "/experience/{userId}": {
+        "get": {
+          "tags": [
+            "Experience"
+          ],
+          "summary": "Gets Experiences By UserId",
+          "operationId": "GetExperienceByUserId",
+          "parameters": [
+            {
+                "name": "userId",
+                "in": "path",
+                "required": true,
+                "type": "string"
+            }
+          ],
+          "responses": {
+            "200": {
+              "description": "",
+              "headers": {}
+            }
+          },
+          "deprecated": false
+        }
+      },
+      "/experience/single/{id}": {
+        "get": {
+          "tags": [
+            "Experience"
+          ],
+          "summary": "Gets Experience ById",
+          "operationId": "GetExperienceById",
+          "parameters": [
+            {
+                "name": "id",
+                "in": "path",
+                "required": true,
+                "type": "string"
+            }
+          ],
+          "responses": {
+            "200": {
+              "description": "",
+              "headers": {}
+            }
+          },
+          "deprecated": false
+        }
+      },
+      "/experience/{id}": {
+        "delete": {
+          "tags": [
+            "Experience"
+          ],
+          "summary": "Deletes Experience",
+          "operationId": "DeleteExperience",
+          "parameters": [
+            {
+                "name": "id",
+                "in": "path",
+                "required": true,
+                "type": "string"
+            }
+          ],
+          "responses": {
+            "200": {
+              "description": "",
+              "headers": {}
+            }
+          },
+          "deprecated": false,
+          "security": [
+            {
+              "bearer": []
+            }
+          ]
+        },
+        "put": {
+            "tags": [
+              "Experience"
+            ],
+            "summary": "Updates Experience",
+            "operationId": "UpdateExperience",
+            "parameters": [
+              {
+                  "name": "id",
+                  "in": "path",
+                  "required": true,
+                  "type": "string"
+              }
+            ],
+            "requestBody": {
+              "description": "",
+              "content": {
+                "application/json": {
+                  "schema": {
+                    "allOf": [
+                      {
+                        "$ref": "#/components/schemas/UpdateExperienceRequest"
+                      },
+                      {
+                        "example": {
+                          "company": "string",
+                          "jobTitle": "string",
+                          "description": "string",
+                          "city": "string",
+                          "country": "string",
+                          "startDate": "2001-01-01",
+                          "endDate": "2001-01-01"
+                        }
+                      }
+                    ]
+                  },
+                  "example": {
+                      "company": "string",
+                      "jobTitle": "string",
+                      "description": "string",
+                      "city": "string",
+                      "country": "string",
+                      "startDate": "2001-01-01",
+                      "endDate": "2001-01-01"
+                  }
+                }
+              },
+              "required": true
+            },
+            "responses": {
+              "200": {
+                "description": "",
+                "headers": {}
+              }
+            },
+            "deprecated": false,
+            "security": [
+              {
+                "bearer": []
+              }
+            ]
+          }
+      },
+      "/project": {
+        "post": {
+          "tags": [
+            "Project"
+          ],
+          "summary": "Adds Project",
+          "operationId": "AddProject",
+          "parameters": [],
+          "requestBody": {
+            "description": "",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "allOf": [
+                    {
+                      "$ref": "#/components/schemas/AddProjectRequest"
+                    },
+                    {
+                      "example": {
+                        "name": "string",
+                        "description": "string",
+                        "techStacks": "string",
+                        "url": ""
+                      }
+                    }
+                  ]
+                },
+                "example": {
+                    "name": "string",
+                    "description": "string",
+                    "techStacks": "string",
+                    "url": ""
+                }
+              }
+            },
+            "required": true
+          },
+          "responses": {
+            "200": {
+              "description": "",
+              "headers": {}
+            }
+          },
+          "deprecated": false,
+          "security": [
+            {
+              "bearer": []
+            }
+          ]
+        },
+        "get": {
+          "tags": [
+            "Project"
+          ],
+          "summary": "Gets All Projects",
+          "operationId": "GetAllProjects",
+          "parameters": [],
+          "responses": {
+            "200": {
+              "description": "",
+              "headers": {}
+            }
+          },
+          "deprecated": false
+        }
+      },
+      "/project/{userId}": {
+        "get": {
+          "tags": [
+            "Project"
+          ],
+          "summary": "Gets Projects By UserId",
+          "operationId": "GetProjectByUserId",
+          "parameters": [
+            {
+                "name": "userId",
+                "in": "path",
+                "required": true,
+                "type": "string"
+            }
+          ],
+          "responses": {
+            "200": {
+              "description": "",
+              "headers": {}
+            }
+          },
+          "deprecated": false
+        }
+      },
+      "/project/single/{id}": {
+        "get": {
+          "tags": [
+            "Project"
+          ],
+          "summary": "Gets A Project By Id",
+          "operationId": "GetProjectById",
+          "parameters": [
+            {
+                "name": "id",
+                "in": "path",
+                "required": true,
+                "type": "string"
+            }
+          ],
+          "responses": {
+            "200": {
+              "description": "",
+              "headers": {}
+            }
+          },
+          "deprecated": false
+        }
+      },
+      "/project/{id}": {
+        "put": {
+          "tags": [
+            "Project"
+          ],
+          "summary": "Updates Project",
+          "operationId": "UpdateProject",
+          "parameters": [
+            {
+                "name": "id",
+                "in": "path",
+                "required": true,
+                "type": "string"
+            }
+          ],
+          "requestBody": {
+            "description": "",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "allOf": [
+                    {
+                      "$ref": "#/components/schemas/UpdateProjectRequest"
+                    },
+                    {
+                      "example": {
+                        "name": "string",
+                        "description": "string",
+                        "techStacks": "string",
+                        "url": ""
+                      }
+                    }
+                  ]
+                },
+                "example": {
+                    "name": "string",
+                    "description": "string",
+                    "techStacks": "string",
+                    "url": ""
+                }
+              }
+            },
+            "required": true
+          },
+          "responses": {
+            "200": {
+              "description": "",
+              "headers": {}
+            }
+          },
+          "deprecated": false,
+          "security": [
+            {
+              "bearer": []
+            }
+          ]
+        },
+        "delete": {
+            "tags": [
+              "Project"
+            ],
+            "summary": "Deletes Project",
+            "operationId": "DeleteProject",
+            "parameters": [
+              {
+                  "name": "id",
+                  "in": "path",
+                  "required": true,
+                  "type": "string"
+              }
+            ],
+            "responses": {
+              "200": {
+                "description": "",
+                "headers": {}
+              }
+            },
+            "deprecated": false,
+            "security": [
+              {
+                "bearer": []
+              }
+            ]
+          }
+      },
+      "/skill": {
+        "post": {
+          "tags": [
+            "Skill"
+          ],
+          "summary": "Adds Skill",
+          "operationId": "AddSkill",
+          "parameters": [],
+          "requestBody": {
+            "description": "",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "allOf": [
+                    {
+                      "$ref": "#/components/schemas/AddSkillRequest"
+                    },
+                    {
+                      "example": {
+                        "skill": "string",
+                        "level": 5
+                      }
+                    }
+                  ]
+                },
+                "example": {
+                  "skill": "string",
+                  "level": 5
+                }
+              }
+            },
+            "required": true
+          },
+          "responses": {
+            "200": {
+              "description": "",
+              "headers": {}
+            }
+          },
+          "deprecated": false,
+          "security": [
+            {
+              "bearer": []
+            }
+          ]
+        },
+        "get": {
+          "tags": [
+            "Skill"
+          ],
+          "summary": "Gets All Skills",
+          "operationId": "GetAllSkills",
+          "parameters": [],
+          "responses": {
+            "200": {
+              "description": "",
+              "headers": {}
+            }
+          },
+          "deprecated": false
+        }
+      },
+      "/skill/{userId}": {
+        "get": {
+          "tags": [
+            "Skill"
+          ],
+          "summary": "Gets Skills By UserId",
+          "operationId": "GetSkillsByUserId",
+          "parameters": [
+            {
+                "name": "userId",
+                "in": "path",
+                "required": true,
+                "type": "string"
+            }
+          ],
+          "responses": {
+            "200": {
+              "description": "",
+              "headers": {}
+            }
+          },
+          "deprecated": false
+        }
+      },
+      "/skill/single/{id}": {
+        "get": {
+          "tags": [
+            "Skill"
+          ],
+          "summary": "Gets Skill By Id",
+          "operationId": "GetSkillById",
+          "parameters": [
+            {
+                "name": "id",
+                "in": "path",
+                "required": true,
+                "type": "string"
+            }
+          ],
+          "responses": {
+            "200": {
+              "description": "",
+              "headers": {}
+            }
+          },
+          "deprecated": false
+        }
+      },
+      "/skill/{id}": {
+        "put": {
+          "tags": [
+            "Skill"
+          ],
+          "summary": "Updates Skill",
+          "operationId": "UpdateSkill",
+          "parameters": [
+            {
+                "name": "id",
+                "in": "path",
+                "required": true,
+                "type": "string"
+            }
+          ],
+          "requestBody": {
+            "description": "",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "allOf": [
+                    {
+                      "$ref": "#/components/schemas/UpdateSkillRequest"
+                    },
+                    {
+                      "example": {
+                        "skill": "string",
+                        "level": 3
+                      }
+                    }
+                  ]
+                },
+                "example": {
+                  "skill": "string",
+                  "level": 3
+                }
+              }
+            },
+            "required": true
+          },
+          "responses": {
+            "200": {
+              "description": "",
+              "headers": {}
+            }
+          },
+          "deprecated": false,
+          "security": [
+            {
+              "bearer": []
+            }
+          ]
+        },
+        "delete": {
+          "tags": [
+            "Skill"
+          ],
+          "summary": "DeleteSkill",
+          "operationId": "DeleteSkill",
+          "parameters": [
+            {
+                "name": "id",
+                "in": "path",
+                "required": true,
+                "type": "string"
+            }
+          ],
+          "responses": {
+            "200": {
+              "description": "",
+              "headers": {}
+            }
+          },
+          "deprecated": false,
+          "security": [
+            {
+              "bearer": []
+            }
+          ]
+        }
+      },
+      "/skill/{id}/upload-icon": {
+        "post": {
+          "tags": [
+            "Skill"
+          ],
+          "summary": "UploadSkillIcon",
+          "operationId": "UploadSkillIcon",
+          "parameters": [
+            {
+                "name": "id",
+                "in": "path",
+                "required": true,
+                "type": "string"
+            }
+          ],
+          "requestBody": {
+            "content": {
+              "multipart/form-data": {
+                "encoding": {},
+                "schema": {
+                  "required": [
+                    "icon"
+                  ],
+                  "type": "object",
+                  "properties": {
+                    "icon": {
+                      "type": "string",
+                      "format": "binary"
+                    }
+                  }
+                }
+              }
+            },
+            "required": true
+          },
+          "responses": {
+            "200": {
+              "description": "",
+              "headers": {}
+            }
+          },
+          "deprecated": false,
+          "security": [
+            {
+              "bearer": []
+            }
+          ]
+        }
+      },
+      "/project/{id}/upload-page-image": {
+        "post": {
+          "tags": [
+            "Project"
+          ],
+          "summary": "Uploads Project Page Image",
+          "operationId": "UploadProjectPageImage",
+          "parameters": [
+            {
+                "name": "id",
+                "in": "path",
+                "required": true,
+                "type": "string"
+            }
+          ],
+          "requestBody": {
+            "content": {
+              "multipart/form-data": {
+                "encoding": {},
+                "schema": {
+                  "required": [
+                    "page-image"
+                  ],
+                  "type": "object",
+                  "properties": {
+                    "page-image": {
+                      "type": "string",
+                      "format": "binary"
+                    }
+                  }
+                }
+              }
+            },
+            "required": true
+          },
+          "responses": {
+            "200": {
+              "description": "",
+              "headers": {}
+            }
+          },
+          "deprecated": false,
+          "security": [
+            {
+              "bearer": []
+            }
+          ]
+        }
+      },
+      "/user/upload-photo/{userId}": {
+        "post": {
+          "tags": [
+            "User"
+          ],
+          "summary": "Uploads User Profile Image",
+          "operationId": "UploadUserProfileImage",
+          "parameters": [
+            {
+                "name": "userId",
+                "in": "path",
+                "required": true,
+                "type": "string"
+            }
+          ],
+          "requestBody": {
+            "content": {
+              "multipart/form-data": {
+                "encoding": {},
+                "schema": {
+                  "required": [
+                    "image"
+                  ],
+                  "type": "object",
+                  "properties": {
+                    "image": {
+                      "type": "string",
+                      "format": "binary"
+                    }
+                  }
+                }
+              }
+            },
+            "required": true
+          },
+          "responses": {
+            "200": {
+              "description": "",
+              "headers": {}
+            }
+          },
+          "deprecated": false,
+          "security": [
+            {
+              "bearer": []
+            }
+          ]
+        }
+      },
+      "/user/{userId}/info": {
+        "get": {
+          "tags": [
+            "User"
+          ],
+          "summary": "Get Single User's Info",
+          "operationId": "GetSingleUserInfo",
+          "parameters": [
+            {
+                "name": "userId",
+                "in": "path",
+                "required": true,
+                "type": "string"
+            }
+          ],
+          "responses": {
+            "200": {
+              "description": "",
+              "headers": {}
+            }
+          },
+          "deprecated": false
+        }
+      },
+      "/user/stats/{userId}": {
+        "get": {
+          "tags": [
+            "User"
+          ],
+          "summary": "Gets User Stats",
+          "operationId": "GetUserStats",
+          "parameters": [
+            {
+                "name": "userId",
+                "in": "path",
+                "required": true,
+                "type": "string"
+            }
+          ],
+          "responses": {
+            "200": {
+              "description": "",
+              "headers": {}
+            }
+          },
+          "deprecated": false
+        }
+      },
+      "/user/biography/{userId}": {
+        "post": {
+          "tags": [
+            "User"
+          ],
+          "summary": "Adds A User's Biography",
+          "operationId": "AddBiography",
+          "parameters": [
+            {
+                "name": "userId",
+                "in": "path",
+                "required": true,
+                "type": "string"
+            }
+          ],
+          "requestBody": {
+            "description": "",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "allOf": [
+                    {
+                      "$ref": "#/components/schemas/AddBiographyRequest"
+                    },
+                    {
+                      "example": {
+                        "biography": "string"
+                      }
+                    }
+                  ]
+                },
+                "example": {
+                  "biography": "string"
+                }
+              }
+            },
+            "required": true
+          },
+          "responses": {
+            "200": {
+              "description": "",
+              "headers": {}
+            }
+          },
+          "deprecated": false,
+          "security": [
+            {
+              "bearer": []
+            }
+          ]
+        },
+        "get": {
+          "tags": [
+            "User"
+          ],
+          "summary": "Gets Biography",
+          "operationId": "GetBiography",
+          "parameters": [
+            {
+                "name": "userId",
+                "in": "path",
+                "required": true,
+                "type": "string"
+            }
+          ],
+          "responses": {
+            "200": {
+              "description": "",
+              "headers": {}
+            }
+          },
+          "deprecated": false
+        },
+        "put": {
+          "tags": [
+            "User"
+          ],
+          "summary": "Updates Biography",
+          "operationId": "UpdateBiography",
+          "parameters": [
+            {
+                "name": "userId",
+                "in": "path",
+                "required": true,
+                "type": "string"
+            }
+          ],
+          "requestBody": {
+            "description": "",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "allOf": [
+                    {
+                      "$ref": "#/components/schemas/UpdateBiographyRequest"
+                    },
+                    {
+                      "example": {
+                        "biography": "string."
+                      }
+                    }
+                  ]
+                },
+                "example": {
+                  "biography": "string"
+                }
+              }
+            },
+            "required": true
+          },
+          "responses": {
+            "200": {
+              "description": "",
+              "headers": {}
+            }
+          },
+          "deprecated": false,
+          "security": [
+            {
+              "bearer": []
+            }
+          ]
+        }
+      },
+      "/user/biography/{id}": {
+        "delete": {
+          "tags": [
+            "User"
+          ],
+          "summary": "DeleteBiography",
+          "operationId": "DeleteBiography",
+          "parameters": [
+            {
+                "name": "id",
+                "in": "path",
+                "required": true,
+                "type": "string"
+            }
+          ],
+          "responses": {
+            "200": {
+              "description": "",
+              "headers": {}
+            }
+          },
+          "deprecated": false,
+          "security": [
+            {
+              "bearer": []
+            }
+          ]
+        }
+      },
+      "/notification/{userId}": {
+        "post": {
+          "tags": [
+            "Contact"
+          ],
+          "summary": "Contact Form Notification",
+          "operationId": "ContactFormNotification",
+          "parameters": [
+            {
+                "name": "userId",
+                "in": "path",
+                "required": true,
+                "type": "string"
+            }
+          ],
+          "requestBody": {
+            "description": "",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "allOf": [
+                    {
+                      "$ref": "#/components/schemas/ContactFormNotificationRequest"
+                    },
+                    {
+                      "example": {
+                        "name": "string",
+                        "email": "example@email.com",
+                        "message": "string"
+                      }
+                    }
+                  ]
+                },
+                "example": {
+                    "name": "string",
+                    "email": "example@email.com",
+                    "message": "string"
+                }
+              }
+            },
+            "required": true
+          },
+          "responses": {
+            "200": {
+              "description": "",
+              "headers": {}
+            }
+          },
+          "deprecated": false
+        }
+      },
+      "/reset-password": {
+        "patch": {
+          "tags": [
+            "Auth"
+          ],
+          "summary": "Reset Password",
+          "operationId": "ResetPassword",
+          "parameters": [],
+          "requestBody": {
+            "description": "",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "allOf": [
+                    {
+                      "$ref": "#/components/schemas/ResetPasswordRequest"
+                    },
+                    {
+                      "example": {
+                        "emailAddress": "example@email.com"
+                      }
+                    }
+                  ]
+                },
+                "example": {
+                  "emailAddress": "example@email.com"
+                }
+              }
+            },
+            "required": true
+          },
+          "responses": {
+            "200": {
+              "description": "",
+              "headers": {}
+            }
+          },
+          "deprecated": false
+        }
+      },
+      "/change-password/{userId}": {
+        "patch": {
+          "tags": [
+            "Auth"
+          ],
+          "summary": "Change Known Password",
+          "operationId": "ChangeKnownPassword",
+          "parameters": [
+            {
+                "name": "userId",
+                "in": "path",
+                "required": true,
+                "type": "string"
+            }
+          ],
+          "requestBody": {
+            "description": "",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "allOf": [
+                    {
+                      "$ref": "#/components/schemas/ChangeKnownPasswordRequest"
+                    },
+                    {
+                      "example": {
+                        "newPassword": "String@1",
+                        "confirmNewPassword": "String@1"
+                      }
+                    }
+                  ]
+                },
+                "example": {
+                    "newPassword": "String@1",
+                    "confirmNewPassword": "String@1"
+                }
+              }
+            },
+            "required": true
+          },
+          "responses": {
+            "200": {
+              "description": "",
+              "headers": {}
+            }
+          },
+          "deprecated": false,
+          "security": [
+            {
+              "bearer": []
+            }
+          ]
+        }
+      },
+      "/change-password/forgotten": {
+        "patch": {
+          "tags": [
+            "Auth"
+          ],
+          "summary": "Change Forgotten Password",
+          "operationId": "ChangeForgottenPassword",
+          "parameters": [],
+          "requestBody": {
+            "description": "",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "allOf": [
+                    {
+                      "$ref": "#/components/schemas/NewRequestRequest"
+                    },
+                    {
+                      "example": {
+                        "newPassword": "String@1",
+                        "confirmNewPassword": "String@1",
+                        "token": "string"
+                      }
+                    }
+                  ]
+                },
+                "example": {
+                    "newPassword": "String@1",
+                    "confirmNewPassword": "String@1",
+                    "token": "string"
+                }
+              }
+            },
+            "required": true
+          },
+          "responses": {
+            "200": {
+              "description": "",
+              "headers": {}
+            }
+          },
+          "deprecated": false
+        }
+      }
+    },
+    "components": {
+      "schemas": {
+        "LoginRequest": {
+          "title": "LoginRequest",
+          "required": [
+            "emailAddress",
+            "password"
+          ],
+          "type": "object",
+          "properties": {
+            "emailAddress": {
+              "type": "string"
+            },
+            "password": {
+              "type": "string"
+            }
+          },
+          "example": {
+            "emailAddress": "ojotobar@gmail.com",
+            "password": "P@33w0rd"
+          }
+        },
+        "RegisterRequest": {
+          "title": "RegisterRequest",
+          "required": [
+            "firstName",
+            "lastName",
+            "middleName",
+            "emailAddress",
+            "phoneNumber",
+            "dateOfBirth",
+            "password",
+            "confirmPassword"
+          ],
+          "type": "object",
+          "properties": {
+            "firstName": {
+              "type": "string"
+            },
+            "lastName": {
+              "type": "string"
+            },
+            "middleName": {
+              "type": "string"
+            },
+            "emailAddress": {
+              "type": "string"
+            },
+            "phoneNumber": {
+              "type": "string"
+            },
+            "dateOfBirth": {
+              "type": "string"
+            },
+            "password": {
+              "type": "string"
+            },
+            "confirmPassword": {
+              "type": "string"
+            }
+          },
+          "example": {
+            "firstName": "Toba",
+            "lastName": "Ojo",
+            "middleName": "Rufus",
+            "emailAddress": "ojotobatr@gmail.com",
+            "phoneNumber": "+2348035222858",
+            "dateOfBirth": "1984/04/17",
+            "password": "P@33w0rd",
+            "confirmPassword": "P@33w0rd"
+          }
+        },
+        "AddNewRoleRequest": {
+          "title": "AddNewRoleRequest",
+          "required": [
+            "name",
+            "role"
+          ],
+          "type": "object",
+          "properties": {
+            "name": {
+              "type": "string"
+            },
+            "role": {
+              "type": "integer",
+              "format": "int32"
+            }
+          },
+          "example": {
+            "name": "Delete",
+            "role": 2024
+          }
+        },
+        "UpdateRolesRequest": {
+          "title": "UpdateRolesRequest",
+          "required": [
+            "name",
+            "role"
+          ],
+          "type": "object",
+          "properties": {
+            "name": {
+              "type": "string"
+            },
+            "role": {
+              "type": "integer",
+              "format": "int32"
+            }
+          },
+          "example": {
+            "name": "Update",
+            "role": 3002
+          }
+        },
+        "VerifyEmailRequest": {
+          "title": "VerifyEmailRequest",
+          "required": [
+            "token"
+          ],
+          "type": "object",
+          "properties": {
+            "token": {
+              "type": "string"
+            }
+          },
+          "example": {
+            "token": "68b37013ff1fbdeb6ac45c84efc3fee5918e439ab3aab9cde7ed4f847a963f8bc95ea1bc1b407bdac364907b2eb2d7fb743f859b54c35006e39f6523c1dfbe29"
+          }
+        },
+        "AddEducationRequest": {
+          "title": "AddEducationRequest",
+          "required": [
+            "institution",
+            "qualificationObtained",
+            "startDate",
+            "endDate"
+          ],
+          "type": "object",
+          "properties": {
+            "institution": {
+              "type": "string"
+            },
+            "qualificationObtained": {
+              "type": "string"
+            },
+            "startDate": {
+              "type": "string"
+            },
+            "endDate": {
+              "type": "string"
+            }
+          },
+          "example": {
+            "institution": "University for Deletion, Deletion. Removed Nation.",
+            "qualificationObtained": "Masters in Economics",
+            "startDate": "2020-10-08",
+            "endDate": "2023-01-09"
+          }
+        },
+        "UpdateEducationRequest": {
+          "title": "UpdateEducationRequest",
+          "required": [
+            "institution",
+            "qualificationObtained",
+            "startDate",
+            "endDate"
+          ],
+          "type": "object",
+          "properties": {
+            "institution": {
+              "type": "string"
+            },
+            "qualificationObtained": {
+              "type": "string"
+            },
+            "startDate": {
+              "type": "string"
+            },
+            "endDate": {
+              "type": "string"
+            }
+          },
+          "example": {
+            "institution": "University for Deletion, Deletion. Deleted Country.",
+            "qualificationObtained": "Ph.D in Economics",
+            "startDate": "2020-10-08",
+            "endDate": "2023-01-09"
+          }
+        },
+        "AddSocialLinkRequest": {
+          "title": "AddSocialLinkRequest",
+          "required": [
+            "name",
+            "url"
+          ],
+          "type": "object",
+          "properties": {
+            "name": {
+              "type": "string"
+            },
+            "url": {
+              "type": "string"
+            }
+          },
+          "example": {
+            "name": "Website",
+            "url": "https://www.facebook.com/toba.ojo1"
+          }
+        },
+        "UpdateSocialLinkRequest": {
+          "title": "UpdateSocialLinkRequest",
+          "required": [
+            "name",
+            "url"
+          ],
+          "type": "object",
+          "properties": {
+            "name": {
+              "type": "string"
+            },
+            "url": {
+              "type": "string"
+            }
+          },
+          "example": {
+            "name": "Website",
+            "url": "https://gleaming-tartufo-3d552b.netlify.app"
+          }
+        },
+        "AddAddressRequest": {
+          "title": "AddAddressRequest",
+          "required": [
+            "line1",
+            "line2",
+            "city",
+            "postalCode",
+            "state",
+            "country"
+          ],
+          "type": "object",
+          "properties": {
+            "line1": {
+              "type": "string"
+            },
+            "line2": {
+              "type": "string"
+            },
+            "city": {
+              "type": "string"
+            },
+            "postalCode": {
+              "type": "string"
+            },
+            "state": {
+              "type": "string"
+            },
+            "country": {
+              "type": "string"
+            }
+          },
+          "example": {
+            "line1": "3, Bagson Street",
+            "line2": "Tudun Fulani New Site, Gwarinpa",
+            "city": "Houston",
+            "postalCode": "901101",
+            "state": "Texas",
+            "country": "USA"
+          }
+        },
+        "UpdateAddressRequest": {
+          "title": "UpdateAddressRequest",
+          "required": [
+            "line1",
+            "line2",
+            "city",
+            "postalCode",
+            "state",
+            "country"
+          ],
+          "type": "object",
+          "properties": {
+            "line1": {
+              "type": "string"
+            },
+            "line2": {
+              "type": "string"
+            },
+            "city": {
+              "type": "string"
+            },
+            "postalCode": {
+              "type": "string"
+            },
+            "state": {
+              "type": "string"
+            },
+            "country": {
+              "type": "string"
+            }
+          },
+          "example": {
+            "line1": "Updated to be deleted",
+            "line2": "Tudun Fulani New Site, Deleted",
+            "city": "Deleted",
+            "postalCode": "00000",
+            "state": "Deleted",
+            "country": "Deleted"
+          }
+        },
+        "AddCertificationRequest": {
+          "title": "AddCertificationRequest",
+          "required": [
+            "name",
+            "issuingBody",
+            "issueDate",
+            "certUrl"
+          ],
+          "type": "object",
+          "properties": {
+            "name": {
+              "type": "string"
+            },
+            "issuingBody": {
+              "type": "string"
+            },
+            "issueDate": {
+              "type": "string"
+            },
+            "certUrl": {
+              "type": "string"
+            }
+          },
+          "example": {
+            "name": "Azure DevOps",
+            "issuingBody": "Azure",
+            "issueDate": "2021-09-30",
+            "certUrl": "https://c46e136a583f7e334124-ac22991740ab4ff17e21daf2ed577041.ssl.cf1.rackcdn.com/Certificate/ScrumFundamentalsCertified-TobaOjo-874726.pdf"
+          }
+        },
+        "UpdateCertificationRequest": {
+          "title": "UpdateCertificationRequest",
+          "required": [
+            "name",
+            "issuingBody",
+            "issueDate",
+            "certUrl"
+          ],
+          "type": "object",
+          "properties": {
+            "name": {
+              "type": "string"
+            },
+            "issuingBody": {
+              "type": "string"
+            },
+            "issueDate": {
+              "type": "string"
+            },
+            "certUrl": {
+              "type": "string"
+            }
+          },
+          "example": {
+            "name": "SCRUM",
+            "issuingBody": "utl",
+            "issueDate": "2021-09-30",
+            "certUrl": ""
+          }
+        },
+        "AddExperienceRequest": {
+          "title": "AddExperienceRequest",
+          "required": [
+            "company",
+            "jobTitle",
+            "description",
+            "city",
+            "country",
+            "startDate",
+            "endDate"
+          ],
+          "type": "object",
+          "properties": {
+            "company": {
+              "type": "string"
+            },
+            "jobTitle": {
+              "type": "string"
+            },
+            "description": {
+              "type": "string"
+            },
+            "city": {
+              "type": "string"
+            },
+            "country": {
+              "type": "string"
+            },
+            "startDate": {
+              "type": "string"
+            },
+            "endDate": {
+              "type": "string"
+            }
+          },
+          "example": {
+            "company": "Decagon",
+            "jobTitle": "Solution Architect",
+            "description": "Develop Software",
+            "city": "Lagos",
+            "country": "Nigeria",
+            "startDate": "2023-07-01",
+            "endDate": ""
+          }
+        },
+        "UpdateExperienceRequest": {
+          "title": "UpdateExperienceRequest",
+          "required": [
+            "company",
+            "jobTitle",
+            "description",
+            "city",
+            "country",
+            "startDate",
+            "endDate"
+          ],
+          "type": "object",
+          "properties": {
+            "company": {
+              "type": "string"
+            },
+            "jobTitle": {
+              "type": "string"
+            },
+            "description": {
+              "type": "string"
+            },
+            "city": {
+              "type": "string"
+            },
+            "country": {
+              "type": "string"
+            },
+            "startDate": {
+              "type": "string"
+            },
+            "endDate": {
+              "type": "string"
+            }
+          },
+          "example": {
+            "company": "Decagon",
+            "jobTitle": ".NET Software Engineer",
+            "description": "Designs, implements, tests, deploys and documents backend software solutions. Helps validate business requirements and plans delivery of works. Works with Project Managers to implement new projects and functionalities",
+            "city": "Lagos",
+            "country": "Nigeria",
+            "startDate": "2020-10-08",
+            "endDate": "2022-03-31"
+          }
+        },
+        "AddProjectRequest": {
+          "title": "AddProjectRequest",
+          "required": [
+            "name",
+            "description",
+            "techStacks",
+            "url"
+          ],
+          "type": "object",
+          "properties": {
+            "name": {
+              "type": "string"
+            },
+            "description": {
+              "type": "string"
+            },
+            "techStacks": {
+              "type": "string"
+            },
+            "url": {
+              "type": "string"
+            }
+          },
+          "example": {
+            "name": "Treasury",
+            "description": "Treasury.",
+            "techStacks": "Java, Springboot, MongoDB, React, Redux, Cloudinary, Mailjet",
+            "url": ""
+          }
+        },
+        "UpdateProjectRequest": {
+          "title": "UpdateProjectRequest",
+          "required": [
+            "name",
+            "description",
+            "techStacks",
+            "url"
+          ],
+          "type": "object",
+          "properties": {
+            "name": {
+              "type": "string"
+            },
+            "description": {
+              "type": "string"
+            },
+            "techStacks": {
+              "type": "string"
+            },
+            "url": {
+              "type": "string"
+            }
+          },
+          "example": {
+            "name": "Updated",
+            "description": "Updated.",
+            "techStacks": "NodeJS, ExpressJS, MongoDB, React, Redux, Cloudinary, Mailjet",
+            "url": ""
+          }
+        },
+        "AddSkillRequest": {
+          "title": "AddSkillRequest",
+          "required": [
+            "skill",
+            "level"
+          ],
+          "type": "object",
+          "properties": {
+            "skill": {
+              "type": "string"
+            },
+            "level": {
+              "type": "integer",
+              "format": "int32"
+            }
+          },
+          "example": {
+            "skill": "Delete",
+            "level": 5
+          }
+        },
+        "UpdateSkillRequest": {
+          "title": "UpdateSkillRequest",
+          "required": [
+            "skill",
+            "level"
+          ],
+          "type": "object",
+          "properties": {
+            "skill": {
+              "type": "string"
+            },
+            "level": {
+              "type": "integer",
+              "format": "int32"
+            }
+          },
+          "example": {
+            "skill": "Delete",
+            "level": 3
+          }
+        },
+        "AddBiographyRequest": {
+          "title": "AddBiographyRequest",
+          "required": [
+            "biography"
+          ],
+          "type": "object",
+          "properties": {
+            "biography": {
+              "type": "string"
+            }
+          },
+          "example": {
+            "biography": "As a seasoned .NET software Engineer, passionate about leveraging my technical skills and experience to build innovative, high-quality software solutions. With over two years of experience in C#, JavaScript, ReactJS, NodeJS with Express, I have a proven track record of delivering complex projrcts on time and within budget."
+          }
+        },
+        "UpdateBiographyRequest": {
+          "title": "UpdateBiographyRequest",
+          "required": [
+            "biography"
+          ],
+          "type": "object",
+          "properties": {
+            "biography": {
+              "type": "string"
+            }
+          },
+          "example": {
+            "biography": "As a seasoned .NET software Engineer."
+          }
+        },
+        "ContactFormNotificationRequest": {
+          "title": "ContactFormNotificationRequest",
+          "required": [
+            "name",
+            "email",
+            "message"
+          ],
+          "type": "object",
+          "properties": {
+            "name": {
+              "type": "string"
+            },
+            "email": {
+              "type": "string"
+            },
+            "message": {
+              "type": "string"
+            }
+          },
+          "example": {
+            "name": "Bill Gate",
+            "email": "bill.gate@outlook.com",
+            "message": "Hi Toba. I like your works and your experiences. I'd like to offer a price for your Spring Board project if you don't mind. Please do get back as soon as possible. Thanks."
+          }
+        },
+        "ResetPasswordRequest": {
+          "title": "ResetPasswordRequest",
+          "required": [
+            "emailAddress"
+          ],
+          "type": "object",
+          "properties": {
+            "emailAddress": {
+              "type": "string"
+            }
+          },
+          "example": {
+            "emailAddress": "ojotobar@gmail.com"
+          }
+        },
+        "ChangeKnownPasswordRequest": {
+          "title": "ChangeKnownPasswordRequest",
+          "required": [
+            "newPassword",
+            "confirmNewPassword"
+          ],
+          "type": "object",
+          "properties": {
+            "newPassword": {
+              "type": "string"
+            },
+            "confirmNewPassword": {
+              "type": "string"
+            }
+          },
+          "example": {
+            "newPassword": "P@33w0rd174",
+            "confirmNewPassword": "P@33w0rd174"
+          }
+        },
+        "NewRequestRequest": {
+          "title": "NewRequestRequest",
+          "required": [
+            "newPassword",
+            "confirmNewPassword",
+            "token"
+          ],
+          "type": "object",
+          "properties": {
+            "newPassword": {
+              "type": "string"
+            },
+            "confirmNewPassword": {
+              "type": "string"
+            },
+            "token": {
+              "type": "string"
+            }
+          },
+          "example": {
+            "newPassword": "P@33w0rd174",
+            "confirmNewPassword": "P@33w0rd174",
+            "token": "aed9dfede2bc710e8c9d1666e96880993cedbce62ea6d3e01de48265d67bc0cee31b229ed9d1b9ec4dd57516d59aaac7d0c4ccf0cf43bec58bdd622f732cea81"
+          }
+        }
+      },
+      "securitySchemes": {
+        "bearer": {
+          "type": "http",
+          "scheme": "bearer"
+        }
+      }
+    },
+    "security": [],
+    "tags": [
+        {
+            "name": "Address",
+            "description": "Address Endpoints"
+        },
+        {
+            "name": "Auth",
+            "description": "Authentication Endpoints"
+        },
+        {
+            "name": "Certification",
+            "description": "Certification Endpoints"
+        },
+        {
+            "name": "Contact",
+            "description": "Contact Endpoints"
+        },
+        {
+            "name": "Education",
+            "description": "Education Endpoints"
+        },
+        {
+            "name": "Experience",
+            "description": "Work Experience Endpoints"
+        },
+        {
+            "name": "Role",
+            "description": "Role Management Endpoints"
+        },
+        {
+            "name": "Project",
+            "description": "Personal Projects Endpoints"
+        },
+        {
+            "name": "Skill",
+            "description": "Skill Management Endpoints"
+        },
+        {
+            "name": "SocialLink",
+            "description": "Contact Links Endpoints"
+        },
+        {
+            "name": "User",
+            "description": "User Management Endpoints"
+        }
+    ]
+  }
