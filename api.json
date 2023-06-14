@@ -60,6 +60,18 @@
             "200": {
               "description": "OK",
               "headers": {}
+            },
+            "400": {
+              "description": "Bad Request",
+              "headers": {}
+            },
+            "404": {
+              "description": "Not Found",
+              "headers": {}
+            },
+            "500": {
+              "description": "Internal Server Error",
+              "headers": {}
             }
           },
           "deprecated": false
@@ -112,7 +124,19 @@
           },
           "responses": {
             "200": {
-              "description": "",
+              "description": "OK",
+              "headers": {}
+            },
+            "400": {
+              "description": "Bad Request",
+              "headers": {}
+            },
+            "404": {
+              "description": "Not Found",
+              "headers": {}
+            },
+            "500": {
+              "description": "Internal Server Error",
               "headers": {}
             }
           },
@@ -129,7 +153,19 @@
           "parameters": [],
           "responses": {
             "200": {
-              "description": "",
+              "description": "OK",
+              "headers": {}
+            },
+            "400": {
+              "description": "Bad Request",
+              "headers": {}
+            },
+            "404": {
+              "description": "Not Found",
+              "headers": {}
+            },
+            "500": {
+              "description": "Internal Server Error",
               "headers": {}
             }
           },
@@ -151,7 +187,19 @@
           "parameters": [],
           "responses": {
             "200": {
-              "description": "",
+              "description": "OK",
+              "headers": {}
+            },
+            "400": {
+              "description": "Bad Request",
+              "headers": {}
+            },
+            "404": {
+              "description": "Not Found",
+              "headers": {}
+            },
+            "500": {
+              "description": "Internal Server Error",
               "headers": {}
             }
           },
@@ -193,7 +241,19 @@
           },
           "responses": {
             "200": {
-              "description": "",
+              "description": "OK",
+              "headers": {}
+            },
+            "400": {
+              "description": "Bad Request",
+              "headers": {}
+            },
+            "404": {
+              "description": "Not Found",
+              "headers": {}
+            },
+            "500": {
+              "description": "Internal Server Error",
               "headers": {}
             }
           },
@@ -213,7 +273,19 @@
           "parameters": [],
           "responses": {
             "200": {
-              "description": "",
+              "description": "OK",
+              "headers": {}
+            },
+            "400": {
+              "description": "Bad Request",
+              "headers": {}
+            },
+            "404": {
+              "description": "Not Found",
+              "headers": {}
+            },
+            "500": {
+              "description": "Internal Server Error",
               "headers": {}
             }
           },
@@ -242,7 +314,19 @@
           ],
           "responses": {
             "200": {
-              "description": "",
+              "description": "OK",
+              "headers": {}
+            },
+            "400": {
+              "description": "Bad Request",
+              "headers": {}
+            },
+            "404": {
+              "description": "Not Found",
+              "headers": {}
+            },
+            "500": {
+              "description": "Internal Server Error",
               "headers": {}
             }
           },
@@ -294,7 +378,19 @@
           },
           "responses": {
             "200": {
-              "description": "",
+              "description": "OK",
+              "headers": {}
+            },
+            "400": {
+              "description": "Bad Request",
+              "headers": {}
+            },
+            "404": {
+              "description": "Not Found",
+              "headers": {}
+            },
+            "500": {
+              "description": "Internal Server Error",
               "headers": {}
             }
           },
@@ -321,7 +417,19 @@
           ],
           "responses": {
             "200": {
-              "description": "",
+              "description": "OK",
+              "headers": {}
+            },
+            "400": {
+              "description": "Bad Request",
+              "headers": {}
+            },
+            "404": {
+              "description": "Not Found",
+              "headers": {}
+            },
+            "500": {
+              "description": "Internal Server Error",
               "headers": {}
             }
           },
@@ -366,7 +474,19 @@
           },
           "responses": {
             "200": {
-              "description": "",
+              "description": "OK",
+              "headers": {}
+            },
+            "400": {
+              "description": "Bad Request",
+              "headers": {}
+            },
+            "404": {
+              "description": "Not Found",
+              "headers": {}
+            },
+            "500": {
+              "description": "Internal Server Error",
               "headers": {}
             }
           },
@@ -383,7 +503,19 @@
           "parameters": [],
           "responses": {
             "200": {
-              "description": "",
+              "description": "OK",
+              "headers": {}
+            },
+            "400": {
+              "description": "Bad Request",
+              "headers": {}
+            },
+            "404": {
+              "description": "Not Found",
+              "headers": {}
+            },
+            "500": {
+              "description": "Internal Server Error",
               "headers": {}
             }
           },
@@ -427,7 +559,19 @@
           },
           "responses": {
             "200": {
-              "description": "",
+              "description": "OK",
+              "headers": {}
+            },
+            "400": {
+              "description": "Bad Request",
+              "headers": {}
+            },
+            "404": {
+              "description": "Not Found",
+              "headers": {}
+            },
+            "500": {
+              "description": "Internal Server Error",
               "headers": {}
             }
           },
@@ -456,7 +600,19 @@
           ],
           "responses": {
             "200": {
-              "description": "",
+              "description": "OK",
+              "headers": {}
+            },
+            "400": {
+              "description": "Bad Request",
+              "headers": {}
+            },
+            "404": {
+              "description": "Not Found",
+              "headers": {}
+            },
+            "500": {
+              "description": "Internal Server Error",
               "headers": {}
             }
           },
@@ -485,7 +641,19 @@
           ],
           "responses": {
             "200": {
-              "description": "",
+              "description": "OK",
+              "headers": {}
+            },
+            "400": {
+              "description": "Bad Request",
+              "headers": {}
+            },
+            "404": {
+              "description": "Not Found",
+              "headers": {}
+            },
+            "500": {
+              "description": "Internal Server Error",
               "headers": {}
             }
           },
@@ -541,7 +709,19 @@
           },
           "responses": {
             "200": {
-              "description": "",
+              "description": "OK",
+              "headers": {}
+            },
+            "400": {
+              "description": "Bad Request",
+              "headers": {}
+            },
+            "404": {
+              "description": "Not Found",
+              "headers": {}
+            },
+            "500": {
+              "description": "Internal Server Error",
               "headers": {}
             }
           },
@@ -588,7 +768,19 @@
           },
           "responses": {
             "200": {
-              "description": "",
+              "description": "OK",
+              "headers": {}
+            },
+            "400": {
+              "description": "Bad Request",
+              "headers": {}
+            },
+            "404": {
+              "description": "Not Found",
+              "headers": {}
+            },
+            "500": {
+              "description": "Internal Server Error",
               "headers": {}
             }
           },
@@ -608,7 +800,19 @@
           "parameters": [],
           "responses": {
             "200": {
-              "description": "",
+              "description": "OK",
+              "headers": {}
+            },
+            "400": {
+              "description": "Bad Request",
+              "headers": {}
+            },
+            "404": {
+              "description": "Not Found",
+              "headers": {}
+            },
+            "500": {
+              "description": "Internal Server Error",
               "headers": {}
             }
           },
@@ -632,7 +836,19 @@
           ],
           "responses": {
             "200": {
-              "description": "",
+              "description": "OK",
+              "headers": {}
+            },
+            "400": {
+              "description": "Bad Request",
+              "headers": {}
+            },
+            "404": {
+              "description": "Not Found",
+              "headers": {}
+            },
+            "500": {
+              "description": "Internal Server Error",
               "headers": {}
             }
           },
@@ -656,7 +872,19 @@
           ],
           "responses": {
             "200": {
-              "description": "",
+              "description": "OK",
+              "headers": {}
+            },
+            "400": {
+              "description": "Bad Request",
+              "headers": {}
+            },
+            "404": {
+              "description": "Not Found",
+              "headers": {}
+            },
+            "500": {
+              "description": "Internal Server Error",
               "headers": {}
             }
           },
@@ -680,7 +908,19 @@
           ],
           "responses": {
             "200": {
-              "description": "",
+              "description": "OK",
+              "headers": {}
+            },
+            "400": {
+              "description": "Bad Request",
+              "headers": {}
+            },
+            "404": {
+              "description": "Not Found",
+              "headers": {}
+            },
+            "500": {
+              "description": "Internal Server Error",
               "headers": {}
             }
           },
@@ -732,7 +972,19 @@
             },
             "responses": {
               "200": {
-                "description": "",
+                "description": "OK",
+                "headers": {}
+              },
+              "400": {
+                "description": "Bad Request",
+                "headers": {}
+              },
+              "404": {
+                "description": "Not Found",
+                "headers": {}
+              },
+              "500": {
+                "description": "Internal Server Error",
                 "headers": {}
               }
             },
@@ -787,7 +1039,19 @@
           },
           "responses": {
             "200": {
-              "description": "",
+              "description": "OK",
+              "headers": {}
+            },
+            "400": {
+              "description": "Bad Request",
+              "headers": {}
+            },
+            "404": {
+              "description": "Not Found",
+              "headers": {}
+            },
+            "500": {
+              "description": "Internal Server Error",
               "headers": {}
             }
           },
@@ -807,7 +1071,19 @@
           "parameters": [],
           "responses": {
             "200": {
-              "description": "",
+              "description": "OK",
+              "headers": {}
+            },
+            "400": {
+              "description": "Bad Request",
+              "headers": {}
+            },
+            "404": {
+              "description": "Not Found",
+              "headers": {}
+            },
+            "500": {
+              "description": "Internal Server Error",
               "headers": {}
             }
           },
@@ -831,7 +1107,19 @@
           ],
           "responses": {
             "200": {
-              "description": "",
+              "description": "OK",
+              "headers": {}
+            },
+            "400": {
+              "description": "Bad Request",
+              "headers": {}
+            },
+            "404": {
+              "description": "Not Found",
+              "headers": {}
+            },
+            "500": {
+              "description": "Internal Server Error",
               "headers": {}
             }
           },
@@ -855,7 +1143,19 @@
           ],
           "responses": {
             "200": {
-              "description": "",
+              "description": "OK",
+              "headers": {}
+            },
+            "400": {
+              "description": "Bad Request",
+              "headers": {}
+            },
+            "404": {
+              "description": "Not Found",
+              "headers": {}
+            },
+            "500": {
+              "description": "Internal Server Error",
               "headers": {}
             }
           },
@@ -912,7 +1212,19 @@
           },
           "responses": {
             "200": {
-              "description": "",
+              "description": "OK",
+              "headers": {}
+            },
+            "400": {
+              "description": "Bad Request",
+              "headers": {}
+            },
+            "404": {
+              "description": "Not Found",
+              "headers": {}
+            },
+            "500": {
+              "description": "Internal Server Error",
               "headers": {}
             }
           },
@@ -939,7 +1251,19 @@
           ],
           "responses": {
             "200": {
-              "description": "",
+              "description": "OK",
+              "headers": {}
+            },
+            "400": {
+              "description": "Bad Request",
+              "headers": {}
+            },
+            "404": {
+              "description": "Not Found",
+              "headers": {}
+            },
+            "500": {
+              "description": "Internal Server Error",
               "headers": {}
             }
           },
@@ -990,7 +1314,19 @@
           },
           "responses": {
             "200": {
-              "description": "",
+              "description": "OK",
+              "headers": {}
+            },
+            "400": {
+              "description": "Bad Request",
+              "headers": {}
+            },
+            "404": {
+              "description": "Not Found",
+              "headers": {}
+            },
+            "500": {
+              "description": "Internal Server Error",
               "headers": {}
             }
           },
@@ -1034,7 +1370,19 @@
           ],
           "responses": {
             "200": {
-              "description": "",
+              "description": "OK",
+              "headers": {}
+            },
+            "400": {
+              "description": "Bad Request",
+              "headers": {}
+            },
+            "404": {
+              "description": "Not Found",
+              "headers": {}
+            },
+            "500": {
+              "description": "Internal Server Error",
               "headers": {}
             }
           },
@@ -1058,7 +1406,19 @@
           ],
           "responses": {
             "200": {
-              "description": "",
+              "description": "OK",
+              "headers": {}
+            },
+            "400": {
+              "description": "Bad Request",
+              "headers": {}
+            },
+            "404": {
+              "description": "Not Found",
+              "headers": {}
+            },
+            "500": {
+              "description": "Internal Server Error",
               "headers": {}
             }
           },
@@ -1111,7 +1471,19 @@
           },
           "responses": {
             "200": {
-              "description": "",
+              "description": "OK",
+              "headers": {}
+            },
+            "400": {
+              "description": "Bad Request",
+              "headers": {}
+            },
+            "404": {
+              "description": "Not Found",
+              "headers": {}
+            },
+            "500": {
+              "description": "Internal Server Error",
               "headers": {}
             }
           },
@@ -1138,7 +1510,19 @@
           ],
           "responses": {
             "200": {
-              "description": "",
+              "description": "OK",
+              "headers": {}
+            },
+            "400": {
+              "description": "Bad Request",
+              "headers": {}
+            },
+            "404": {
+              "description": "Not Found",
+              "headers": {}
+            },
+            "500": {
+              "description": "Internal Server Error",
               "headers": {}
             }
           },
@@ -1195,7 +1579,19 @@
           },
           "responses": {
             "200": {
-              "description": "",
+              "description": "OK",
+              "headers": {}
+            },
+            "400": {
+              "description": "Bad Request",
+              "headers": {}
+            },
+            "404": {
+              "description": "Not Found",
+              "headers": {}
+            },
+            "500": {
+              "description": "Internal Server Error",
               "headers": {}
             }
           },
@@ -1215,7 +1611,19 @@
           "parameters": [],
           "responses": {
             "200": {
-              "description": "",
+              "description": "OK",
+              "headers": {}
+            },
+            "400": {
+              "description": "Bad Request",
+              "headers": {}
+            },
+            "404": {
+              "description": "Not Found",
+              "headers": {}
+            },
+            "500": {
+              "description": "Internal Server Error",
               "headers": {}
             }
           },
@@ -1239,7 +1647,19 @@
           ],
           "responses": {
             "200": {
-              "description": "",
+              "description": "OK",
+              "headers": {}
+            },
+            "400": {
+              "description": "Bad Request",
+              "headers": {}
+            },
+            "404": {
+              "description": "Not Found",
+              "headers": {}
+            },
+            "500": {
+              "description": "Internal Server Error",
               "headers": {}
             }
           },
@@ -1263,7 +1683,19 @@
           ],
           "responses": {
             "200": {
-              "description": "",
+              "description": "OK",
+              "headers": {}
+            },
+            "400": {
+              "description": "Bad Request",
+              "headers": {}
+            },
+            "404": {
+              "description": "Not Found",
+              "headers": {}
+            },
+            "500": {
+              "description": "Internal Server Error",
               "headers": {}
             }
           },
@@ -1287,7 +1719,19 @@
           ],
           "responses": {
             "200": {
-              "description": "",
+              "description": "OK",
+              "headers": {}
+            },
+            "400": {
+              "description": "Bad Request",
+              "headers": {}
+            },
+            "404": {
+              "description": "Not Found",
+              "headers": {}
+            },
+            "500": {
+              "description": "Internal Server Error",
               "headers": {}
             }
           },
@@ -1349,7 +1793,19 @@
             },
             "responses": {
               "200": {
-                "description": "",
+                "description": "OK",
+                "headers": {}
+              },
+              "400": {
+                "description": "Bad Request",
+                "headers": {}
+              },
+              "404": {
+                "description": "Not Found",
+                "headers": {}
+              },
+              "500": {
+                "description": "Internal Server Error",
                 "headers": {}
               }
             },
@@ -1400,7 +1856,19 @@
           },
           "responses": {
             "200": {
-              "description": "",
+              "description": "OK",
+              "headers": {}
+            },
+            "400": {
+              "description": "Bad Request",
+              "headers": {}
+            },
+            "404": {
+              "description": "Not Found",
+              "headers": {}
+            },
+            "500": {
+              "description": "Internal Server Error",
               "headers": {}
             }
           },
@@ -1420,7 +1888,19 @@
           "parameters": [],
           "responses": {
             "200": {
-              "description": "",
+              "description": "OK",
+              "headers": {}
+            },
+            "400": {
+              "description": "Bad Request",
+              "headers": {}
+            },
+            "404": {
+              "description": "Not Found",
+              "headers": {}
+            },
+            "500": {
+              "description": "Internal Server Error",
               "headers": {}
             }
           },
@@ -1444,7 +1924,19 @@
           ],
           "responses": {
             "200": {
-              "description": "",
+              "description": "OK",
+              "headers": {}
+            },
+            "400": {
+              "description": "Bad Request",
+              "headers": {}
+            },
+            "404": {
+              "description": "Not Found",
+              "headers": {}
+            },
+            "500": {
+              "description": "Internal Server Error",
               "headers": {}
             }
           },
@@ -1468,7 +1960,19 @@
           ],
           "responses": {
             "200": {
-              "description": "",
+              "description": "OK",
+              "headers": {}
+            },
+            "400": {
+              "description": "Bad Request",
+              "headers": {}
+            },
+            "404": {
+              "description": "Not Found",
+              "headers": {}
+            },
+            "500": {
+              "description": "Internal Server Error",
               "headers": {}
             }
           },
@@ -1521,7 +2025,19 @@
           },
           "responses": {
             "200": {
-              "description": "",
+              "description": "OK",
+              "headers": {}
+            },
+            "400": {
+              "description": "Bad Request",
+              "headers": {}
+            },
+            "404": {
+              "description": "Not Found",
+              "headers": {}
+            },
+            "500": {
+              "description": "Internal Server Error",
               "headers": {}
             }
           },
@@ -1548,7 +2064,19 @@
             ],
             "responses": {
               "200": {
-                "description": "",
+                "description": "OK",
+                "headers": {}
+              },
+              "400": {
+                "description": "Bad Request",
+                "headers": {}
+              },
+              "404": {
+                "description": "Not Found",
+                "headers": {}
+              },
+              "500": {
+                "description": "Internal Server Error",
                 "headers": {}
               }
             },
@@ -1595,7 +2123,19 @@
           },
           "responses": {
             "200": {
-              "description": "",
+              "description": "OK",
+              "headers": {}
+            },
+            "400": {
+              "description": "Bad Request",
+              "headers": {}
+            },
+            "404": {
+              "description": "Not Found",
+              "headers": {}
+            },
+            "500": {
+              "description": "Internal Server Error",
               "headers": {}
             }
           },
@@ -1639,7 +2179,19 @@
           ],
           "responses": {
             "200": {
-              "description": "",
+              "description": "OK",
+              "headers": {}
+            },
+            "400": {
+              "description": "Bad Request",
+              "headers": {}
+            },
+            "404": {
+              "description": "Not Found",
+              "headers": {}
+            },
+            "500": {
+              "description": "Internal Server Error",
               "headers": {}
             }
           },
@@ -1663,7 +2215,19 @@
           ],
           "responses": {
             "200": {
-              "description": "",
+              "description": "OK",
+              "headers": {}
+            },
+            "400": {
+              "description": "Bad Request",
+              "headers": {}
+            },
+            "404": {
+              "description": "Not Found",
+              "headers": {}
+            },
+            "500": {
+              "description": "Internal Server Error",
               "headers": {}
             }
           },
@@ -1712,7 +2276,19 @@
           },
           "responses": {
             "200": {
-              "description": "",
+              "description": "OK",
+              "headers": {}
+            },
+            "400": {
+              "description": "Bad Request",
+              "headers": {}
+            },
+            "404": {
+              "description": "Not Found",
+              "headers": {}
+            },
+            "500": {
+              "description": "Internal Server Error",
               "headers": {}
             }
           },
@@ -1739,7 +2315,19 @@
           ],
           "responses": {
             "200": {
-              "description": "",
+              "description": "OK",
+              "headers": {}
+            },
+            "400": {
+              "description": "Bad Request",
+              "headers": {}
+            },
+            "404": {
+              "description": "Not Found",
+              "headers": {}
+            },
+            "500": {
+              "description": "Internal Server Error",
               "headers": {}
             }
           },
@@ -1788,7 +2376,19 @@
           },
           "responses": {
             "200": {
-              "description": "",
+              "description": "OK",
+              "headers": {}
+            },
+            "400": {
+              "description": "Bad Request",
+              "headers": {}
+            },
+            "404": {
+              "description": "Not Found",
+              "headers": {}
+            },
+            "500": {
+              "description": "Internal Server Error",
               "headers": {}
             }
           },
@@ -1837,7 +2437,19 @@
           },
           "responses": {
             "200": {
-              "description": "",
+              "description": "OK",
+              "headers": {}
+            },
+            "400": {
+              "description": "Bad Request",
+              "headers": {}
+            },
+            "404": {
+              "description": "Not Found",
+              "headers": {}
+            },
+            "500": {
+              "description": "Internal Server Error",
               "headers": {}
             }
           },
@@ -1886,7 +2498,19 @@
           },
           "responses": {
             "200": {
-              "description": "",
+              "description": "OK",
+              "headers": {}
+            },
+            "400": {
+              "description": "Bad Request",
+              "headers": {}
+            },
+            "404": {
+              "description": "Not Found",
+              "headers": {}
+            },
+            "500": {
+              "description": "Internal Server Error",
               "headers": {}
             }
           },
@@ -1915,7 +2539,19 @@
           ],
           "responses": {
             "200": {
-              "description": "",
+              "description": "OK",
+              "headers": {}
+            },
+            "400": {
+              "description": "Bad Request",
+              "headers": {}
+            },
+            "404": {
+              "description": "Not Found",
+              "headers": {}
+            },
+            "500": {
+              "description": "Internal Server Error",
               "headers": {}
             }
           },
@@ -1939,7 +2575,19 @@
           ],
           "responses": {
             "200": {
-              "description": "",
+              "description": "OK",
+              "headers": {}
+            },
+            "400": {
+              "description": "Bad Request",
+              "headers": {}
+            },
+            "404": {
+              "description": "Not Found",
+              "headers": {}
+            },
+            "500": {
+              "description": "Internal Server Error",
               "headers": {}
             }
           },
@@ -1986,7 +2634,19 @@
           },
           "responses": {
             "200": {
-              "description": "",
+              "description": "OK",
+              "headers": {}
+            },
+            "400": {
+              "description": "Bad Request",
+              "headers": {}
+            },
+            "404": {
+              "description": "Not Found",
+              "headers": {}
+            },
+            "500": {
+              "description": "Internal Server Error",
               "headers": {}
             }
           },
@@ -2058,7 +2718,19 @@
           },
           "responses": {
             "200": {
-              "description": "",
+              "description": "OK",
+              "headers": {}
+            },
+            "400": {
+              "description": "Bad Request",
+              "headers": {}
+            },
+            "404": {
+              "description": "Not Found",
+              "headers": {}
+            },
+            "500": {
+              "description": "Internal Server Error",
               "headers": {}
             }
           },
@@ -2087,7 +2759,19 @@
           ],
           "responses": {
             "200": {
-              "description": "",
+              "description": "OK",
+              "headers": {}
+            },
+            "400": {
+              "description": "Bad Request",
+              "headers": {}
+            },
+            "404": {
+              "description": "Not Found",
+              "headers": {}
+            },
+            "500": {
+              "description": "Internal Server Error",
               "headers": {}
             }
           },
@@ -2143,7 +2827,19 @@
           },
           "responses": {
             "200": {
-              "description": "",
+              "description": "OK",
+              "headers": {}
+            },
+            "400": {
+              "description": "Bad Request",
+              "headers": {}
+            },
+            "404": {
+              "description": "Not Found",
+              "headers": {}
+            },
+            "500": {
+              "description": "Internal Server Error",
               "headers": {}
             }
           },
@@ -2183,7 +2879,19 @@
           },
           "responses": {
             "200": {
-              "description": "",
+              "description": "OK",
+              "headers": {}
+            },
+            "400": {
+              "description": "Bad Request",
+              "headers": {}
+            },
+            "404": {
+              "description": "Not Found",
+              "headers": {}
+            },
+            "500": {
+              "description": "Internal Server Error",
               "headers": {}
             }
           },
@@ -2232,7 +2940,19 @@
           },
           "responses": {
             "200": {
-              "description": "",
+              "description": "OK",
+              "headers": {}
+            },
+            "400": {
+              "description": "Bad Request",
+              "headers": {}
+            },
+            "404": {
+              "description": "Not Found",
+              "headers": {}
+            },
+            "500": {
+              "description": "Internal Server Error",
               "headers": {}
             }
           },
@@ -2281,7 +3001,19 @@
           },
           "responses": {
             "200": {
-              "description": "",
+              "description": "OK",
+              "headers": {}
+            },
+            "400": {
+              "description": "Bad Request",
+              "headers": {}
+            },
+            "404": {
+              "description": "Not Found",
+              "headers": {}
+            },
+            "500": {
+              "description": "Internal Server Error",
               "headers": {}
             }
           },
@@ -2351,14 +3083,14 @@
             }
           },
           "example": {
-            "firstName": "Toba",
-            "lastName": "Ojo",
-            "middleName": "Rufus",
-            "emailAddress": "ojotobatr@gmail.com",
-            "phoneNumber": "+2348035222858",
-            "dateOfBirth": "1984/04/17",
-            "password": "P@33w0rd",
-            "confirmPassword": "P@33w0rd"
+            "firstName": "string",
+            "lastName": "string",
+            "middleName": "string",
+            "emailAddress": "example@email.com",
+            "phoneNumber": "+12345678",
+            "dateOfBirth": "2002-01-01",
+            "password": "String@1",
+            "confirmPassword": "String@1"
           }
         },
         "AddNewRoleRequest": {
@@ -2378,8 +3110,8 @@
             }
           },
           "example": {
-            "name": "Delete",
-            "role": 2024
+            "name": "User",
+            "role": 1
           }
         },
         "UpdateRolesRequest": {
@@ -2399,8 +3131,8 @@
             }
           },
           "example": {
-            "name": "Update",
-            "role": 3002
+            "name": "User",
+            "role": 1
           }
         },
         "VerifyEmailRequest": {
@@ -2415,7 +3147,7 @@
             }
           },
           "example": {
-            "token": "68b37013ff1fbdeb6ac45c84efc3fee5918e439ab3aab9cde7ed4f847a963f8bc95ea1bc1b407bdac364907b2eb2d7fb743f859b54c35006e39f6523c1dfbe29"
+            "token": "string"
           }
         },
         "AddEducationRequest": {
@@ -2442,10 +3174,10 @@
             }
           },
           "example": {
-            "institution": "University for Deletion, Deletion. Removed Nation.",
-            "qualificationObtained": "Masters in Economics",
-            "startDate": "2020-10-08",
-            "endDate": "2023-01-09"
+            "institution": "University of Nigeria",
+            "qualificationObtained": "Bachelor of Science in Computer Science",
+            "startDate": "2001-01-01",
+            "endDate": "2004-01-09"
           }
         },
         "UpdateEducationRequest": {
@@ -2472,10 +3204,10 @@
             }
           },
           "example": {
-            "institution": "University for Deletion, Deletion. Deleted Country.",
-            "qualificationObtained": "Ph.D in Economics",
-            "startDate": "2020-10-08",
-            "endDate": "2023-01-09"
+            "institution": "University of Nigeria",
+            "qualificationObtained": "Bachelor of Science in Computer Science",
+            "startDate": "2001-01-01",
+            "endDate": "2004-01-09"
           }
         },
         "AddSocialLinkRequest": {
@@ -2495,7 +3227,7 @@
           },
           "example": {
             "name": "Website",
-            "url": "https://www.facebook.com/toba.ojo1"
+            "url": "https://www.user.com"
           }
         },
         "UpdateSocialLinkRequest": {
@@ -2515,7 +3247,7 @@
           },
           "example": {
             "name": "Website",
-            "url": "https://gleaming-tartufo-3d552b.netlify.app"
+            "url": "https://www.user.com"
           }
         },
         "AddAddressRequest": {
@@ -2550,12 +3282,12 @@
             }
           },
           "example": {
-            "line1": "3, Bagson Street",
-            "line2": "Tudun Fulani New Site, Gwarinpa",
-            "city": "Houston",
-            "postalCode": "901101",
-            "state": "Texas",
-            "country": "USA"
+            "line1": "string",
+            "line2": "string",
+            "city": "string",
+            "postalCode": "string",
+            "state": "string",
+            "country": "string"
           }
         },
         "UpdateAddressRequest": {
@@ -2590,12 +3322,12 @@
             }
           },
           "example": {
-            "line1": "Updated to be deleted",
-            "line2": "Tudun Fulani New Site, Deleted",
-            "city": "Deleted",
-            "postalCode": "00000",
-            "state": "Deleted",
-            "country": "Deleted"
+            "line1": "string",
+            "line2": "string",
+            "city": "string",
+            "postalCode": "string",
+            "state": "string",
+            "country": "string"
           }
         },
         "AddCertificationRequest": {
@@ -2622,10 +3354,10 @@
             }
           },
           "example": {
-            "name": "Azure DevOps",
-            "issuingBody": "Azure",
-            "issueDate": "2021-09-30",
-            "certUrl": "https://c46e136a583f7e334124-ac22991740ab4ff17e21daf2ed577041.ssl.cf1.rackcdn.com/Certificate/ScrumFundamentalsCertified-TobaOjo-874726.pdf"
+            "name": "string",
+            "issuingBody": "string",
+            "issueDate": "2000-01-01",
+            "certUrl": "https://link.com"
           }
         },
         "UpdateCertificationRequest": {
@@ -2652,10 +3384,10 @@
             }
           },
           "example": {
-            "name": "SCRUM",
-            "issuingBody": "utl",
-            "issueDate": "2021-09-30",
-            "certUrl": ""
+            "name": "string",
+            "issuingBody": "string",
+            "issueDate": "2000-01-01",
+            "certUrl": "https://link.com"
           }
         },
         "AddExperienceRequest": {
@@ -2694,13 +3426,13 @@
             }
           },
           "example": {
-            "company": "Decagon",
-            "jobTitle": "Solution Architect",
-            "description": "Develop Software",
-            "city": "Lagos",
-            "country": "Nigeria",
-            "startDate": "2023-07-01",
-            "endDate": ""
+            "company": "string",
+            "jobTitle": "string",
+            "description": "string",
+            "city": "string",
+            "country": "string",
+            "startDate": "2000-01-01",
+            "endDate": "2004-01-01"
           }
         },
         "UpdateExperienceRequest": {
@@ -2739,13 +3471,13 @@
             }
           },
           "example": {
-            "company": "Decagon",
-            "jobTitle": ".NET Software Engineer",
-            "description": "Designs, implements, tests, deploys and documents backend software solutions. Helps validate business requirements and plans delivery of works. Works with Project Managers to implement new projects and functionalities",
-            "city": "Lagos",
-            "country": "Nigeria",
-            "startDate": "2020-10-08",
-            "endDate": "2022-03-31"
+            "company": "string",
+            "jobTitle": "string",
+            "description": "string",
+            "city": "string",
+            "country": "string",
+            "startDate": "2000-01-01",
+            "endDate": "2004-01-01"
           }
         },
         "AddProjectRequest": {
@@ -2772,10 +3504,10 @@
             }
           },
           "example": {
-            "name": "Treasury",
-            "description": "Treasury.",
-            "techStacks": "Java, Springboot, MongoDB, React, Redux, Cloudinary, Mailjet",
-            "url": ""
+            "name": "string",
+            "description": "string",
+            "techStacks": "string",
+            "url": "https://www.link.com"
           }
         },
         "UpdateProjectRequest": {
@@ -2802,10 +3534,10 @@
             }
           },
           "example": {
-            "name": "Updated",
-            "description": "Updated.",
-            "techStacks": "NodeJS, ExpressJS, MongoDB, React, Redux, Cloudinary, Mailjet",
-            "url": ""
+            "name": "string",
+            "description": "string",
+            "techStacks": "string",
+            "url": "https://www.link.com"
           }
         },
         "AddSkillRequest": {
@@ -2846,7 +3578,7 @@
             }
           },
           "example": {
-            "skill": "Delete",
+            "skill": "string",
             "level": 3
           }
         },
@@ -2862,7 +3594,7 @@
             }
           },
           "example": {
-            "biography": "As a seasoned .NET software Engineer, passionate about leveraging my technical skills and experience to build innovative, high-quality software solutions. With over two years of experience in C#, JavaScript, ReactJS, NodeJS with Express, I have a proven track record of delivering complex projrcts on time and within budget."
+            "biography": "string"
           }
         },
         "UpdateBiographyRequest": {
@@ -2877,7 +3609,7 @@
             }
           },
           "example": {
-            "biography": "As a seasoned .NET software Engineer."
+            "biography": "string"
           }
         },
         "ContactFormNotificationRequest": {
@@ -2900,9 +3632,9 @@
             }
           },
           "example": {
-            "name": "Bill Gate",
-            "email": "bill.gate@outlook.com",
-            "message": "Hi Toba. I like your works and your experiences. I'd like to offer a price for your Spring Board project if you don't mind. Please do get back as soon as possible. Thanks."
+            "name": "string",
+            "email": "example@email.com",
+            "message": "string"
           }
         },
         "ResetPasswordRequest": {
@@ -2936,8 +3668,8 @@
             }
           },
           "example": {
-            "newPassword": "P@33w0rd174",
-            "confirmNewPassword": "P@33w0rd174"
+            "newPassword": "String@1",
+            "confirmNewPassword": "String@1"
           }
         },
         "NewRequestRequest": {
@@ -2960,9 +3692,9 @@
             }
           },
           "example": {
-            "newPassword": "P@33w0rd174",
-            "confirmNewPassword": "P@33w0rd174",
-            "token": "aed9dfede2bc710e8c9d1666e96880993cedbce62ea6d3e01de48265d67bc0cee31b229ed9d1b9ec4dd57516d59aaac7d0c4ccf0cf43bec58bdd622f732cea81"
+            "newPassword": "String@1",
+            "confirmNewPassword": "String@1",
+            "token": "string"
           }
         }
       },

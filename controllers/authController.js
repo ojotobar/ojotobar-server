@@ -14,7 +14,7 @@ const handleLogin = async (req, res) => {
     if(!emailAddress || !password) return res.status(400).json({ 'message': 'Email and password are required.'});
 
     const foundUser = await Users.findOne({ emailAddress: emailAddress }).exec();
-    if(!foundUser) return res.status(401).json({'message':`No user found with email: ${emailAddress}`});
+    if(!foundUser) return res.status(404).json({'message':`No user found with email: ${emailAddress}`});
     if(!foundUser.isEmailConfirmed) {
         const origin = req.headers.origin;
         try {
@@ -71,7 +71,7 @@ const handleLogin = async (req, res) => {
         res.cookie('jwt', refreshToken, { httpOnly: true, sameSite: 'None', secure: true, maxAge: 24 * 60 * 60 * 1000 });//secure: true might not work for Thunder Client
         res.status(200).json({ accessToken });
     } else {
-        res.status(401).json({'message':'Password is not correct.'});
+        res.status(400).json({'message':'Password is not correct.'});
     }
 };
 
