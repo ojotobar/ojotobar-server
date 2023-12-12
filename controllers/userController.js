@@ -207,7 +207,7 @@ const stats = async (req, res) => {
 
 const userAgents = async (req, res) => {
     try {
-        const agents = await UserAgent.find();
+        const agents = await UserAgent.find().sort({ createdAt: -1 });;
         res.status(200).json(agents);
     } catch (error) {
         res.status(500).json({'message':error.message});
