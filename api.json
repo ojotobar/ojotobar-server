@@ -2461,6 +2461,48 @@
           ]
         }
       },
+      "/user/": {
+        "get": {
+          "tags": [
+            "User"
+          ],
+          "summary": "Get User Details",
+          "operationId": "GetUserDetails",
+          "parameters": [],
+          "responses": {
+            "200": {
+              "description": "OK",
+              "headers": {}
+            },
+            "500": {
+              "description": "Internal Server Error",
+              "headers": {}
+            }
+          },
+          "deprecated": false
+        }
+      },
+      "/user/agents": {
+        "get": {
+          "tags": [
+            "User"
+          ],
+          "summary": "Get List of User Agents",
+          "operationId": "GetListofUserAgents",
+          "parameters": [],
+          "responses": {
+            "200": {
+              "description": "OK",
+              "headers": {}
+            },
+            "500": {
+              "description": "Internal Server Error",
+              "headers": {}
+            }
+          },
+          "deprecated": false
+        }
+      },
       "/user/upload-photo/{userId}": {
         "post": {
           "tags": [

@@ -9,6 +9,7 @@ const Skill = require('../models/Skill');
 const Certification = require('../models/Certification');
 const Address = require('../models/Address');
 const { differenceInMonths, parseISO } = require('date-fns');
+const UserAgent = require('../models/UserAgent');
 const MONTHS_IN_A_YEAR = 12;
 
 const createBiography = async (req, res) => {
@@ -87,8 +88,18 @@ const removeBiography = async (req, res) => {
 };
 
 const getSingleUser = async (req, res) => {
+    const userAgent = req.get("user-agent");
     const user = (await User.find())[0];
     const biography = await Biography.findOne({ userId: user?._id });
+
+    if(userAgent){
+        const newUserAgent = {
+            "name": userAgent,
+        }
+        
+        await UserAgent.create(newUserAgent);
+    }
+
     res.status(200).json({
         "id": user?._id,
         "firstName": user?.firstName,
@@ -194,6 +205,15 @@ const stats = async (req, res) => {
     }
 };
 
+const userAgents = async (req, res) => {
+    try {
+        const agents = await UserAgent.find();
+        res.status(200).json(agents);
+    } catch (error) {
+        res.status(500).json({'message':error.message});
+    }
+};
+
 module.exports = {
     getSingleUser,
     notify,
@@ -202,5 +222,6 @@ module.exports = {
     updateBiography,
     removeBiography,
     stats,
-    getPersonalInfo
+    getPersonalInfo,
+    userAgents
 }

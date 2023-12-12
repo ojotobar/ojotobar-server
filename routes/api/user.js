@@ -38,4 +38,7 @@ router.route('/upload-photo/:userId')
 router.route('/:id/info')
     .get(userController.getPersonalInfo);
 
+router.route('/agents')
+    .get(userController.userAgents);
+
 module.exports = router;
